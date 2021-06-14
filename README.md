@@ -1,4 +1,4 @@
-# DoEPy: Promoting Python within the Department of Energy
+# DoEPy: Helping Python Thrive within the National Labs & Department of Energy
 
 ## Why DoEPy
 
