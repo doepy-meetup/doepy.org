@@ -12,6 +12,7 @@ We want to create a unique opportunity to see Python succeed and thrive within t
 - Joe Sullivan (ANL, APS)
 - Jean Shuler (LLNL, LC)
 - Jane Herriman (LLNL, LC)
+- James Powell (Don't Use This Code, NumFOCUS)
    
 ## Schedule
 
