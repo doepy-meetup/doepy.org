@@ -16,6 +16,10 @@ He is one of the original creators of the NetworkX Python software package for a
 
 He is active in the academic community and has published articles in mathematics, physics, chemistry, geophysics, engineering, and computer science.
 
+### Exploring network structure, dynamics, and function using NetworkX
+
+NetworkX is a software tool for network science.  I'll tell the previously untold story of how the software project started at Los Alamos and describe the original design goals.   The software scope was driven by research applications such as disease spread, cybersecurity, and measuring scholarly impact.  I'll describe these applications and the algorithms and analyses that were developed to support them.
+
 ## Schedule
 
 We are proud to be hosting our first event **October 27th at 6pm EDT / 3pm PDT**
