@@ -16,7 +16,7 @@ We want to create a unique opportunity to see Python succeed and thrive within t
    
 ## Schedule
 
-We are proud to be hosting our first event **Wednesday Sep 29, 6 PM EST.**
+We are proud to be hosting our first event **October 27th at 6pm EDT / 3pm PDT**
 
 It will be hosted virtually.
 
