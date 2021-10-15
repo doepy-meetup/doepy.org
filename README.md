@@ -1,6 +1,6 @@
 # DoEPy: Helping Python Thrive within the National Labs & Department of Energy
 
-## Why DoEPy
+## Why DOE Python Exchange?
 
 We want to create a unique opportunity to see Python succeed and thrive within the National Labs! We propose creating a new resource for scientists, researchers, and technical staff to support their use of Python and to build a strong, lasting community for Python users within the Department of Energy National Labs. 
 
