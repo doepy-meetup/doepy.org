@@ -154,6 +154,13 @@ progress {
 textarea {
     overflow: auto;
 }
+
+button {
+    background-color: #b9f1ff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
 [type="checkbox"],
 [type="radio"] {
     -webkit-box-sizing: border-box;
