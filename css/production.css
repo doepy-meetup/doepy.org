@@ -905,7 +905,7 @@ h4,
 h5,
 h6 {
     font-family: Monaco, Menlo, Consolas, monospace;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.3;
     margin-top: 0;
     margin-bottom: 0.8rem;
@@ -914,7 +914,7 @@ h6 {
 h6 {
     color: #7c7f7a;
 }
-.h1,
+/* .h1,
 .h2,
 .h3,
 .h4,
@@ -922,7 +922,7 @@ h6 {
 .h6 {
     line-height: 1;
     margin-bottom: 0.8rem;
-}
+} */
 p {
     margin: 0;
 }
@@ -1232,7 +1232,7 @@ hr {
     padding: 3.2rem;
 }
 .pt3 {
-    /* padding-top: 3.2rem; */
+    padding-top: 0rem;
 }
 .pr3 {
     padding-right: 3.2rem;
