@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20220525T210000Z
+DTEND:20220525T220000Z
+DTSTAMP:20220516T144924Z
+ORGANIZER;CN=The Python Exchange:mailto:c_5dncmbpo14p2rpuu3e6boosfk8@group.
+ calendar.google.com
+UID:58gv07nmq6f1r3vbh1s58np5bo@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=thepythonexchange@gmail.com;X-NUM-GUESTS=0:mailto:thepythonexchange
+ @gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-1553389222
+CREATED:20220516T144825Z
+DESCRIPTION:<b>Join fellow Python users within DoE research sites for a net
+ working conversation!</b><br><b><br>To join:&nbsp\;</b><a href="https://pri
+ metime.bluejeans.com/a2m/live-event/szxxadwd" id="ow2106" __is_owner="true"
+ ><u>https://primetime.bluejeans.com/a2m/live-event/szxxadwd</u></a><br><br>
+ Our Guest Panelist this month is Matthias Bussonnier\, Software Engineer an
+ d longtime open-source contributor. He has been a maintainer of IPython for
+  over 10 years\, and co-founder of Jupyter\, for which he shares the ACM Sy
+ stem Software award in 2017.\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nDo not edit this section of t
+ he description.\n\nView your event at https://calendar.google.com/calendar/
+ event?action=VIEW&eid=NThndjA3bm1xNmYxcjN2YmgxczU4bnA1Ym8gdGhlcHl0aG9uZXhja
+ GFuZ2VAbQ&tok=NTQjY181ZG5jbWJwbzE0cDJycHV1M2U2Ym9vc2ZrOEBncm91cC5jYWxlbmRhc
+ i5nb29nbGUuY29tZDVlYjczOTExZTE1NzMwMWQ1ZDM1NTUyOGNhODdkMTQ0MDU1NzU1OQ&ctz=A
+ merica%2FNew_York&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220516T144924Z
+LOCATION:https://primetime.bluejeans.com/a2m/live-event/szxxadwd
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:The Python Exchange - Guest Panelist Matthias Bussonnier
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
