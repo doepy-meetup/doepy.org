@@ -1372,7 +1372,7 @@ hr {
     border: 10px;
     border-color: #ccc;
     border-style: solid;
-    width: 40%;
+    width: auto;
     height: auto;
 }
 
