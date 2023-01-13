@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Phoenix
+X-LIC-LOCATION:America/Phoenix
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0700
+TZNAME:MST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Phoenix:20230126T150000
+DTEND;TZID=America/Phoenix:20230126T160000
+DTSTAMP:20230111T160444Z
+ORGANIZER;CN=The Python Exchange:mailto:c_5dncmbpo14p2rpuu3e6boosfk8@group.
+ calendar.google.com
+UID:28ubnevfs6ecpoaar397bl4ifu@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=thepythonexchange@gmail.com;X-NUM-GUESTS=0:mailto:thepythonexchange
+ @gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=daniel+doepy@dutc.io;X-NUM-GUESTS=0:mailto:daniel+doepy@dutc.io
+X-MICROSOFT-CDO-OWNERAPPTID:-169436485
+CREATED:20221116T221801Z
+DESCRIPTION:<b>Join fellow Python users within DoE research sites for a net
+ working conversation!</b><br><b><br>To join:&nbsp\;</b><a href="https://pri
+ metime.bluejeans.com/a2m/live-event/szxxadwd"><u><u><u>https://primetime.bl
+ uejeans.com/a2m/live-event/szxxadwd</u></u></u></a><br><br>More details of 
+ this event:&nbsp\;<a href="http://meetup.doepy.org"><u>meetup.doepy.org</u>
+ </a>
+LAST-MODIFIED:20230111T160444Z
+LOCATION:https://primetime.bluejeans.com/a2m/live-event/szxxadwd
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:The Python Exchange
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
