@@ -1409,9 +1409,19 @@ hr {
 .time {
     /* 		width: 20%; */
     font-family: sans-serif;
+    font-weight: bold;
     font-size: 3rem;
     background-color: #fff;
     color: #904644;
+    padding: 0.75rem 0rem 1rem 0rem;
+    text-align: center;
+}
+.specialtime {
+    /* 		width: 20%; */
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    background-color: #f10000;
+    color: #ffffff;
     padding: 0.75rem 0rem 1rem 0rem;
     text-align: center;
 }
