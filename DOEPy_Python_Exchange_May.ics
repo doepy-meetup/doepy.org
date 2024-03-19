@@ -22,8 +22,8 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20230531T170000
-DTEND;TZID=America/New_York:20230531T180000
+DTSTART;TZID=America/New_York:20240529T170000
+DTEND;TZID=America/New_York:20240529T180000
 RRULE:FREQ=MONTHLY;BYDAY=-1WE
 DTSTAMP:20230125T160825Z
 ORGANIZER;CN=The Python Exchange:mailto:c_5dncmbpo14p2rpuu3e6boosfk8@group.
@@ -34,13 +34,12 @@ ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
 X-MICROSOFT-CDO-OWNERAPPTID:-8066383
 CREATED:20230125T160400Z
 DESCRIPTION:<b>Join fellow Python users within DoE research sites for a net
- working conversation!</b><br><b><br>To join: </b><a href="https://primetime
- .bluejeans.com/a2m/live-event/szxxadwd"><u><u><u><u>https://primetime.bluej
- eans.com/a2m/live-event/szxxadwd</u></u></u></u></a><br><br>More details of
+ working conversation!</b><br><b><br>To join: </b><a href="https://us02web.zoom.us/j/85370177985?pwd=Y1NDZUJDdmk2SUxhZHJOeUxiR2hsdz09"><u>https://us02web.zoom.us/j/85370177985?pwd=Y1NDZUJDdmk2SUxhZHJOeUxiR2hsdz09
+</u></a><br><br>More details of
   this event: <u><a href="http://meetup.doepy.org"><u>meetup.doepy.org</u></
  a></u><br><br>See you there!
 LAST-MODIFIED:20230125T160824Z
-LOCATION:https://primetime.bluejeans.com/a2m/live-event/szxxadwd
+LOCATION:https://us02web.zoom.us/j/85370177985?pwd=Y1NDZUJDdmk2SUxhZHJOeUxiR2hsdz09
 SEQUENCE:1
 STATUS:CONFIRMED
 SUMMARY:The Python Exchange
