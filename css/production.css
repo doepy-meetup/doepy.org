@@ -58,8 +58,17 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: 1em;
+}
+code {
+  background-color: #f5f5f5;
+  padding: 5px 2px 0px 2px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  vertical-align: baseline;
+  line-height: 1;
 }
 dfn {
     font-style: italic;
@@ -243,12 +252,6 @@ ol ul,
 ul ol,
 ul ul {
     margin-bottom: 0;
-}
-code,
-kbd,
-pre,
-samp {
-    font-family: Monaco, Menlo, Consolas, monospace;
 }
 b,
 strong {
