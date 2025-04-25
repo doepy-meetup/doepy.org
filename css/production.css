@@ -1373,6 +1373,7 @@ hr {
 }
 .box {
     margin: 0 auto;
+    max-width: 400px;
     border: 10px;
     border-color: #ccc;
     border-style: solid;
