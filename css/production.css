@@ -1432,22 +1432,23 @@ hr {
 
 .yt-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: #FF0000;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
+  text-align: center;
+  background-color: #fff5f5;
+  border: 1px solid #c4302b;
+  border-radius: 12px;
+  color: #c4302b;
+  padding: 0.25rem 1rem;
+  transition: background-color 0.2s ease;
 }
 
 .yt-button:hover {
-  background-color: #cc0000;
+  background-color: #ffeaea;
 }
+
 .play-icon {
+  display: block;
+  fill: #c4302b;
   width: 40px;
   height: 40px;
-  fill: white;
 }
+
