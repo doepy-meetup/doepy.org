@@ -1,0 +1,1069 @@
+- date: 2025-07-30
+  cancelled: false
+  guest: Jan Janssen
+  title: Up-scale Python Functions for High-Performance Computing with executorlib
+  youtube: ""
+  description: |
+    With the raise of machine-learned interatomic potentials in the atomistic
+    simulation community in Materials Science, the complexity of simulation
+    workflows changed from directed acyclic graph (DAG) based simulation
+    workflows with typically just a single simulation code to simulation
+    workflows coupling simulation codes at different length and time scales and
+    thousands of individual simulations. To orchestrate these workflows a
+    number of simulation frameworks were developed. Still as part of the
+    Exascale Computing Project we realized these were limited in their
+    flexibility and scalability.
+
+    So, we developed executorlib[1] based on the concurrent futures Executor
+    interface in the Python standard library and with the goal to distribute
+    Python functions over hundreds of compute nodes. Internally, executorlib
+    leverages the Simple Linux Utility for Resource Management (SLURM) and the
+    flux framework from Lawrence Livermore National Laboratory [2] to up-scale
+    simulation workflows from a workstation or traditional high-performance
+    computers (HPC) to the latest generation of Exascale machines. In contrast
+    to previous solutions, it does not require any daemon process or database
+    but instead directly interfaces with the job manager to maximize
+    computational efficiency.  At the same time, it is designed with a focus on
+    debugging capabilities to minimize the overhead of migrating workflows to
+    the Exascale machines.
+
+    In this presentation I introduced executorlib, highlighting the lessons
+    learned from development of the pyiron atomistic simulation suite which led
+    to the development of executorlib as minimalistic workflow manager.
+    Finally, I highlight the general applicability of executorlib to distribute
+    python functions of any scientific domain on HPC clusters of all sizes.
+
+    [1]: Janssen et al., JOSS, 10(108), 7782, (2025).
+    [2]: Dong H. Ahn et al., Fut. Gen. Comp. Sys., 110, (2020) .
+
+  bio: |
+    Jan Janssen is the group leader for Materials Informatics at the Max Planck
+    Institute for Sustainable Materials. His group focuses on applying methods
+    from computer science including machine learning to discover novel
+    sustainable materials with applications ranging from machine-learned
+    interatomic potentials to large language model agents for atomistic
+    simulation. Previously, Jan was a director’s postdoctoral fellow in the
+    T-division at Los Alamos National Laboratory as part of the Exascale
+    Computing Project as well as an invited postdoctoral fellow at the
+    University of Chicago and the University of California Los Angeles. Besides
+    his research work, Jan is the lead developer of the pyiron atomistic
+    simulation suite, maintains over 900 open-source materials informatics
+    software packages for the conda-forge community and is a regular
+    contributor to open-source software on Github.
+- date: 2025-06-25
+  cancelled: false
+  guest: Gijs Burghoorn
+  title: Diving into Parquet Read Optimization
+  youtube: "https://www.youtube.com/watch?v=f9lG3zDoiBc&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=1"
+  description: |
+    Parquet is an important file-format used in data science world. It provides
+    many opportunities for query optimization and data pruning. Based on our
+    experience optimizing the Polars Parquet reader, we look through how
+    Parquet stores data, its uses and rediscover many of the reader
+    optimizations.
+  bio: |
+    Gijs is a Software Engineer and Open Source maintainer at Polars. He has
+    Masters degree in Cybersecurity from Université Grenoble Alpes and has
+    worked on hardware testing and simulation at the TU Delft. At Polars, he
+    has spend time on improving the Parquet read and write performance.
+- date: 2025-05-28
+  cancelled: true
+  guest: Kyle Sunden
+  title: Dynamic Data with Matplotlib
+  youtube: ""
+  description: |
+    Matplotlib is already a favorite plotting library for creating static data
+    visualizations in Python. Here, we discuss the development of a new
+    DataContainer interface and accompanying transformation pipeline which
+    enable easier dynamic data visualization in Matplotlib. This improves the
+    experience of plotting pure functions, automatically recomputing when you
+    pan and zoom.
+    Data containers can ingest data from a variety of sources,
+    including structured data such as Pandas Dataframes or Xarrays, up to live
+    updating data from web services or databases. The flexible transformation
+    pipeline allows for control over how your data is encoded into a plot.
+  bio: |
+    Kyle is a Research Software Engineer with Matplotlib under the NASA ROSES
+    grant.  Kyle holds a PhD in Chemistry from the University of Wisconsin
+    where he did nonlinear spectroscopy. During his PhD, Kyle primarily worked
+    on instrumentation control software to automate data collection and
+    hardware integration for custom scientific instruments.
+- date: 2025-04-30
+  cancelled: false
+  guest: Guillaume Lemaitre
+  youtube: "https://www.youtube.com/watch?v=15qzsXcNV98&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=2"
+  title: "Developments in the scikit-learn Ecosystem: Going Beyond `model.fit(X, y).predict(X)`"
+  description: |
+    Scikit-learn is one of the de facto libraries when it comes to
+    predictive modeling with tabular data. For over a decade, it has
+    provided traditional and reliable algorithms to address data science
+    problems. While it excels at model fitting and prediction, these stages
+    represent only a small portion of a data science project and are
+    relatively well-defined.
+    Many data scientists are familiar with the notion that 90% of their
+    time is spent on preprocessing, while the modeling stage takes up only
+    10% of their efforts. Additionally, tracking and organizing
+    experiments, as well as transitioning from experimentation to
+    production, can be challenging.
+
+    This exchange aims to shed light on recent developments and efforts within
+    the scikit-learn ecosystem. We will provide an overview of the
+    following tools through a series of short notebook demos.
+  bio: |
+    Guillaume Lemaitre is Chief Machine Learning Officer and an open-source
+    software engineer at Probabl.  He is a core maintainer of several packages
+    from the scikit-learn ecosystem such as scikit-learn, skrub, skore, and
+    imbalanced-learn. He holds a PhD in computer science / medical imaging.
+- date: 2025-03-25
+  cancelled: false
+  guest: Marco Gorelli
+  youtube: "https://www.youtube.com/watch?v=TvFWFlK-2po&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=3"
+  title: "Narwhals: Lightweight and extensible compatibility layer between dataframe libraries!"
+  description: |
+    Marco will discuss Narwhals, a lightweight compatibility layer between
+    dataframes, and how it's silently changing many of the data science
+    tools you’re already using.
+  bio: |
+    Marco is the author of [Narwhals](https://narwhals-dev.github.io/narwhals/)
+    a core developer of [Polars](https://pola.rs/), and a Senior
+    Software Engineer at Quansight Labs. He wrote the first complete
+    [Polars Plugins tutorial](https://marcogorelli.github.io/polars-plugins-tutorial/),
+    teaching thousands of students how to write Rust code to extend Polars
+    functionality.
+
+    Marco has a background in Mathematics and holds an MSc from the
+    University of Oxford, and was one of the prize winners in the M6
+    Forecasting Competition (2nd place overall Q1).
+- date: 2025-02-26
+  cancelled: false
+  guest: Gaël Varoquaux
+  title: "skrub for tables: Less wrangling, more machine learning"
+  youtube: "https://www.youtube.com/watch?v=hdWWhwmRpbA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=4"
+  description: |
+    While tabular data is central to all organizations, it seems left out of
+    the AI discussion, which has focused on images, text and sound. Ineed, for
+    data science, most of the excitement is in machine learning, but most of
+    the work happens before. Tables often require extensive manual
+    transformation or "data wrangling".
+    I will discuss how we progressively rethought this process, building
+    machine learning tool that require less wrangling. We are building a new
+    library, skrub (https://skrub-data.org), that facilitates complex
+    tabular-learning pipelines, writing as much as possible wrangling as
+    high-level operations and automating them. A few lines of skrub can spare
+    you dozens of wrangling lines!
+  bio: |
+    Gaël Varoquaux is a research director working on data science at Inria
+    (French computer science national research) where he leads the Soda
+    team. He is also co-founder and scientific advisor of Probabl.
+    Varoquaux's research covers fundamentals of artificial intelligence,
+    statistical learning, natural language processing, causal inference, as
+    well as applications to health, with a current focus on public health and
+    epidemiology. He also creates technology: he co-founded scikit-learn, one of
+    the reference machine-learning toolboxes, and helped build various central
+    tools for data analysis in Python.  Varoquaux has worked at UC Berkeley,
+    McGill, and university of Florence. He did a PhD in quantum physics
+    supervised by Alain Aspect and is a graduate from Ecole Normale Superieure,
+    Paris.
+- date: 2025-01-29
+  cancelled: false
+  guest: Juan Luis
+  title: Accelerate your Python code with Rust
+  youtube: "https://www.youtube.com/watch?v=k2_Qcp9yRcA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=5"
+  description: |
+    Combining Python with compiled languages for speed is far from novel. And
+    yet, Rust has proven to be a particularly solid companion for Python,
+    thanks in part to the great tooling available. In this exchange we will give a
+    walkthrough of how to create your first Rust extension for Python.
+  bio: |
+    Juan Luis (he/him/él) is an Aerospace Engineer with a passion for tech
+    communities and sustainability. He works at QuantumBlack, AI by
+    McKinsey, as Product Manager for Kedro, an opinionated Python framework
+    for creating reproducible, maintainable and modular data science code.
+    He has worked as Developer Advocate at Read the Docs, as software
+    engineer in the space, consulting, and banking industries, and as a
+    Python trainer for several private and public entities.
+
+    Apart from being a long-time user and contributor to many projects in
+    the scientific Python stack (NumPy, SciPy, Astropy) he has published
+    several open-source packages, the most important one being poliastro,
+    an open-source Python library for interactive astrodynamics used in
+    academia and industry.
+
+    Finally, Juan Luis is the founder and former chair of the Python España
+    association, the point of contact for the Spanish Python community,
+    former organizer of PyCon Spain, and current organizer of the PyData
+    Madrid monthly meetups.
+- date: 2024-12-04
+  cancelled: false
+  guest: Sylvain Corlay
+  title: "Possible futures for Jupyter"
+  youtube: "https://www.youtube.com/watch?v=929dki4gIlw&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=6"
+  description: |
+    We will discuss the future of the Jupyter project (from a
+    features/technical standpoint), in which we present ongoing and future work
+    on the project. (Collaborative editing, CAD, GIS, etc).
+  bio: |
+    Sylvain Corlay is the founder and CEO of QuantStack. He holds a PhD in
+    applied mathematics from University Paris VI.
+
+    As an open-source developer, Sylvain Corlay is active in the Jupyter
+    ecosystem. He is the co-creator of the Voilà dashboarding system and the
+    Xeus C++ implementation of the Jupyter kernel protocol, and he maintains
+    several other projects of the Jupyter stack. He is also a core contributor
+    to conda-forge, and several other scientific computing open-source
+    projects, such as bqplot, xtensor, and ipyleaflet.
+
+    Beyond QuantStack, Sylvain does a lot of volunteer work for the community,
+    as a member of the board of directors of NumFOCUS, the general chair of
+    JupyterCon 2023. He also co-organizes the PyData Paris Meetup.
+
+    Sylvain founded QuantStack in September 2016. Prior to founding QuantStack,
+    he was a Quant Researcher at Bloomberg and an Adjunct Faculty member at the
+    Courant Institute and Columbia University.
+- date: 2024-10-30
+  cancelled: false
+  guest: Wes McKinney
+  title: "Recent Tools and Trends in the Python Ecosystem"
+  youtube: "https://www.youtube.com/watch?v=s5ruYHn3u_I&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=7"
+  description: |
+    In this discussion, I'll give an overview of some different projects and
+    development work happening in the Python ecosystem that I'm excited about.
+    This includes data frame libraries, data wrangling frameworks like Ibis,
+    core processing libraries like Apache Arrow and DuckDB, and Python core
+    work in tools like ruff, uv, pixi, and rye.
+  bio: |
+    Wes McKinney is an open source software developer and entrepreneur focusing
+    on data processing tools and systems. He created the Python pandas and Ibis
+    projects, and co-created Apache Arrow. He is a Member of the Apache
+    Software Foundation and also a project PMC member for Apache Parquet. He is
+    currently a Principal Architect at Posit PBC and a co-founder of Voltron
+    Data.
+- date: 2024-08-28
+  cancelled: false
+  guest: Hugo Shi
+  title: Building a DS/ML platform with Kubernetes
+  youtube: "https://www.youtube.com/watch?v=vd-BWeHb8bA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=8"
+  description: |
+    In this discussion, we will explore how Kubernetes, an open-source
+    container orchestration platform, is used in data science and machine
+    learning. As the demand for scalable and reproducible data science
+    workflows grows, Kubernetes offers a robust solution for managing the
+    complexities of deployment, scaling, and maintenance. We will begin by
+    discussing the key challenges faced by data scientists and machine learning
+    engineers, such as environment inconsistencies and infrastructure
+    scalability, and how Kubernetes effectively addresses these issues.
+
+    The discussion will cover the basics of Kubernetes, including its core
+    components and architecture, tailored specifically for a data science
+    audience. We will delve into setting up data science environments on
+    Kubernetes, from containerizing workflows to managing dependencies.
+    Furthermore, the talk will highlight advanced topics like scaling data
+    science workloads, orchestrating machine learning pipelines with tools like
+    Kubeflow, and deploying machine learning models in production.
+
+    By the end of this session, attendees will have a clear understanding of how
+    Kubernetes can enhance their data science and machine learning workflows,
+    providing a scalable, efficient, and reproducible infrastructure. No Kubernetes
+    knowledge is required for this presentation.
+  bio: |
+    Hugo Shi is a data science leader with 15 years of experience with data
+    science and software projects at companies ranging from JP Morgan to the
+    Chicago Trading Company. He is the CTO and co-founder of Saturn Cloud where
+    he helps to make sure that Saturn Cloud is secure, scalable, and easy to
+    use for all data science teams. Hugo has a PhD in Signal Processing and his
+    academic research focused on iterative reconstruction algorithms in medical
+    imaging.
+
+    About Saturn Cloud
+    Saturn Cloud is an award-winning ML platform for any cloud. It was built to
+    make ML easy and secure within the enterprise. Customers include NVIDIA,
+    CFA Institute, Snowflake, Flatiron School, Nestle, and more. Website –
+    https://saturncloud.io
+- date: 2024-07-31
+  cancelled: false
+  guest: Kyle Chard
+  title: "Globus Compute: Managed Python Execution Across the Computing Continuum"
+  youtube: "https://www.youtube.com/watch?v=aJZPHCTks0g&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=9"
+  description: |
+    Globus Compute is a distributed Function as a Service (FaaS) platform that
+    enables flexible, secure, scalable, and high performance remote Python
+    function execution. Unlike centralized FaaS platforms, Globus Compute
+    allows users to execute functions on heterogeneous remote computers, from
+    laptops to leadership computing facilities. In this talk, Kyle will
+    describe how Globus Compute can enable researchers to easily scale and
+    execute their Python programs on remote computers.  Examples showing how
+    Globus Compute is being used in various applications across the national
+    labs will be presented.
+  bio: |
+    Kyle Chard is a Research Associate Professor in the Department of Computer
+    Science at the University of Chicago. He also holds a joint appointment at
+    Argonne National Laboratory. He received his Ph.D. in Computer Science from
+    Victoria University of Wellington, New Zealand in 2011.  He is a member of
+    the ACM and IEEE,  received the IEEE TCHPC Award for Excellence for Early
+    Career Researchers in HPC, was part of the Globus team that won an R&D100
+    award, and received the New Zealand Top Achiever Doctoral Scholarship.  He
+    co-leads the Globus Labs research group, which focuses on a broad range of
+    research problems in data-intensive computing and research data management.
+    He leads NSF-funded projects related to distributed and parallel computing,
+    scientific reproducibility, research automation, and cost-aware use of
+    cloud infrastructure.
+
+    Find out more about Kyle's active research projects on the Globus Labs website https://labs.globus.org/
+- date: 2024-06-26
+  cancelled: false
+  guest: Dimo Angelov
+  title: Topic modeling with Top2Vec
+  youtube: "https://www.youtube.com/watch?v=gojUGoRfVw4&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=10"
+  description: |
+    In my talk, I will present Top2Vec, an open source topic modeling project.
+    I will begin by discussing the inspiration and motivations behind creating
+    the algorithm and project. Following that I will explain how Top2vec
+    differs from traditional topic modeling techniques, highlighting its
+    distinctive features and advantages. To conclude, I will demonstrate some
+    practical applications of Top2Vec.
+  bio: |
+    Dimo Angelov is the Chief Data Scientist at Thema, where he leads data
+    science research and development of techniques for strategic market
+    intelligence. Previously he was a data scientist and researcher at the
+    Government of Canada developing NLP tools for data exploration. He is
+    currently finishing his PhD in Artificial Intelligence, specializing in
+    Natural Language Processing. Prior to that he did his MSc in Artificial
+    Intelligence where he created machine learning models for predicting
+    chemotherapy response of cancer patients, facilitating personalized
+    medicine. His main research interests are representation learning, vector
+    representation, topic modeling and information retrieval. He enjoys solving
+    challenging problems in all domains.
+- date: 2024-05-29
+  cancelled: false
+  guest: James Colliander
+  title: Cloud Streaming Science
+  youtube: "https://www.youtube.com/watch?v=5uuCOfvwYEw&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=11"
+  description: |
+    The digital revolution that started three-quarters of a century ago changed
+    us. We, the people of Earth, are connected at light speed to each other,
+    and to devices all around our planet. We receive signals from as far away
+    as Voyager 1. We are virtually omnipresent. This talk will explore the
+    challenges and opportunities for science in our era of ubiquitous
+    cloud-computing
+  bio: |
+    James Ellis Colliander, a citizen of the USA and Canada, is Cofounder and
+    Partnerships Lead for the International Interactive Computing Collaboration
+    (2i2c.org). He is a mathematics professor (on leave) at UBC, was previously
+    Director of the Pacific Institute for the Mathematical Sciences (PIMS), and
+    Professor of Mathematics at the University of Toronto. Colliander
+    co-created Crowdmark, the grading and analytics company, and Callysto, a
+    provider of open interactive educational resources. Colliander worked as a
+    research physicist for the United States Naval Research Laboratory and 3M
+    Company before receiving his PhD at the University of Illinois.
+- date: 2024-04-24
+  cancelled: false
+  guest: Jørgen Dokken
+  title: "An introduction to finite element modelling in FEniCS"
+  youtube: "https://www.youtube.com/watch?v=cRRlPPLN8ps&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=12"
+  description: |
+    In this exchange, I will present the FEniCS project
+    (https://fenicsproject.org), an open-source toolkit for solving partial
+    differential equations. The FEniCS Project is composed of several packages,
+    written in either C++ or Python. I will delve into the structure of the
+    project and its evolution over time. Specifically, I will explain our use
+    of Python for generating C-code and how we interact with C++.
+  bio: |
+    Jørgen Dokken is a Senior Research Software Engineer at Simula Research
+    Laboratory, Oslo, Norway. His path into scientific software started during
+    my PhD, where he used open-source software in Python. In particular, he
+    used FEniCS, a finite element software for solving partial differential
+    equations. His initial minor contributions to the source code and user
+    forum gradually evolved into a more significant role as a core-developer,
+    forum administrator and member of the FEniCS Steering Council. He has
+    dedicated numerous hours to creating tutorials for FEniCS and associated
+    packages.
+- date: 2024-03-27
+  cancelled: false
+  guest: Will Barnes
+  title: "Building an Open-source Ecosystem in the Golden Age of Solar Physics"
+  youtube: "https://www.youtube.com/watch?v=JXaGSQtc6R4&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=13"
+  description: |
+    The field of solar physics is primarily concerned with understanding the
+    physics of the complex outer atmosphere of the Sun, the solar corona.
+    Though visible to the naked eye only during a solar eclipse, the corona is
+    observed across the electromagnetic spectrum, including the visible,
+    extreme ultraviolet and x-ray wavelengths, by both space- and ground-based
+    observatories. We are currently entering a so-called "golden age" of solar
+    physics in which an increasing number of future solar observatories promise
+    to deepen our understanding of this complex plasma environment. However,
+    effectively using these data to understand the fundamental physical
+    processes in the solar atmosphere requires software capable of searching,
+    ingesting, combining, and analyzing data from these many different data
+    sources, all of which are growing both in size and complexity. The SunPy
+    Project aims to solve this challenge by building and maintaining an
+    ecosystem of interoperable, community-developed, open-source Python
+    packages for analyzing solar physics data.In this talk, I'll provide a
+    brief history of the SunPy Project, the current state of the Project as
+    well as the software landscape in solar physics more broadly, and discuss
+    how the Project is moving forward. Throughout my talk, I will illustrate
+    these points using my own journey into the world of open-source scientific
+    Python software development and how that has informed my career as a solar
+    physicist.
+  bio: |
+    Will Barnes is a research assistant professor in the Department of Physics
+    at American University in Washington, D.C and a research scientist at NASA
+    Goddard Space Flight Center where he studies fundamental heating process in
+    the solar corona, the outermost layer of our Sun's atmosphere. Prior to
+    joining American University and NASA, he held a National Research Council
+    Postdoctoral Fellowship at the U.S. Naval Research Laboratory. In 2019,
+    Will received his Ph.D. from Rice University where he studied observational
+    diagnostics of heating in the Sun's corona and developed open-source Python
+    tools for forward modeling optically thin emission. He currently serves as
+    the deputy lead developer for The SunPy Project which oversees the
+    development of sunpy, a community-developed, free and open-source solar
+    data analysis Python package, in addition to a number of other Python
+    packages widely used by the solar physics community.
+- date: 2024-02-28
+  cancelled: false
+  guest: David Nicholson, Ph.D.
+  title: "VocalPy as a case study of domain-driven design in scientific Python"
+  youtube: "https://www.youtube.com/watch?v=PtTegIM6m1o&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=14"
+  description: |
+    In this exchange, I will present VocalPy, the core package of a software
+    community for researchers that study how animals communicate with sound.
+    For this audience, I will focus on the domain-driven design approach I am
+    taking to develop the package. This approach has resulted in features that
+    are (arguably) not common in scientific Python packages.
+    For example, domain-specific data types, and pipelines consisting of classes
+    that use callbacks. I will contrast these features with the design of many
+    core scientific Python packages, that typically place an emphasis on a purely
+    functional approach operating mainly on numpy arrays. I will discuss the
+    trade-offs involved; for example, the potential for increased readability and
+    reproducibility, but along with that a potential increase in maintenance
+    burden. You will walk away with a better understanding of bioacoustics and
+    animal communication, and some food for thought about how we design
+    scientific software.
+  bio: |
+    Research software engineer: sometimes more software, sometimes more research.
+- date: 2024-01-31
+  cancelled: false
+  guest: Dr. Hans Debinski
+  title: "iminuit: A foundational flexible library for fitting"
+  youtube: "https://www.youtube.com/watch?v=qFNT6gLkOSs&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=15"
+  description: |
+    I will start with a general introduction into the theory of fitting and why
+    you may want to use iminuit. I will show a few difficult nuts to crack with
+    iminuit, and generally, how you get the best performance for a particular
+    fit. Fitting speed in research matters: if an analysis runs quickly, one can
+    do more checks and variations, and it makes computationally-intensive methods
+    like the bootstrap for error estimation feasible."
+  bio: |
+    Hans Dembinski is a Research Fellow at Max-Planck Institute for Nuclear Physics
+- date: 2023-11-29
+  cancelled: false
+  guest: Dr. Katrina Riehl
+  title: "The Pathway to Open Source Science"
+  youtube: "https://www.youtube.com/watch?v=RWQ3G36U1kA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=16"
+  description: |
+    We have seen innumerable advancements in the scientific community due to
+    the shift toward open science. We've learned, as a community, we must work
+    together in order to build the next generation of scientific innovation.
+    The history of the scientific computing ecosystem is intricately tied to
+    its open source initiatives. One cannot succeed without the other. In this
+    talk, we will walk through where we've been, where we are going, and the
+    lessons we've learned along the way.
+  bio: |
+    Our guest panelist was Dr. Katrina Riehl, President of the Board of
+    Directors at NumFOCUS and Adjunct Lecturer at Georgetown University.
+- date: 2023-11-01
+  cancelled: false
+  guest: Stuart Campbell
+  title: "Experiences from Software Collaborations Spanning Multiple Large Scale User Facilities"
+  youtube: "https://www.youtube.com/watch?v=nEV77jib7uk&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=17"
+  description: |
+    I start by giving a brief background to my career path and my journey in
+    working at many world class large scale experimental user facilities in
+    both Europe and the United States. I’ve been involved in a number of cross
+    facility and institution software projects. I present my thoughts based on
+    my experiences working on these projects, highlighting some of the
+    challenges that face such collaborations.
+  bio: |
+    Stuart Campbell is NSLS-II Chief Data Scientist & Deputy Program Manager,
+    Data Sci & System Integration, National Synchrotron Light Source II
+- date: 2023-09-27
+  cancelled: false
+  guest: Dr. Titus Brown
+  title: "To infinity and beyond: design thoughts and experiences from writing Python code to tackle annoyingly large biological data sets"
+  youtube: "https://www.youtube.com/watch?v=1VBGOU3t9Ls&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=18"
+  description: |
+    Dr. Brown discusses his experience in developing two scientific Python
+    packages, khmer and sourmash, designed for dealing with really large
+    sequencing data sets. Topics include switching from C++ to Rust for the
+    performance layer, integrating tests and documentation into your daily
+    life, and the interplay between algorithmic novelty and effective
+    implementations.
+  bio: |
+    Titus Brown is a professor at the UC Davis School of Veterinary Medicine,
+    where he works on software and pipelines for biological data analysis. He
+    has been involved in the Python community for over 20 years, and is an
+    advocate of open source, open science, and reproducibility in computational
+    science. He also invests heavily in training and capacity building. He
+    blogs at ivory.idyll.org/blog/ and is currently not particularly active on
+    any other social media. Github at https://github.com/dib-lab/.
+- date: 2023-08-30
+  cancelled: false
+  guest: Dr. Giordon Stark
+  title: "Reduce, Reuse, Reinterpret: an end-to-end pipeline for recycling particle physics results"
+  youtube: "https://www.youtube.com/watch?v=YtXvmopQdT0&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=19"
+  description: |
+    Searches for new physics at the Large Hadron Collider have constrained many models of physics beyond the Standard Model.
+    Many searches also provide resources that allow them to be reinterpreted in the context of other models. We describe a
+    reinterpretation pipeline that examines previously untested models of new physics using supplementary information from
+    ATLAS SUSY searches, such as public analysis routines and serialized likelihoods, in a way that provides accurate limits
+    even in models that differ meaningfully from the benchmark models of the original analysis. These resources are combined
+    with common event generation and simulation toolkits MadGraph, Pythia, and Delphes into workflows steered by TOML
+    configuration files, and bundled into the mapyde python package.
+  bio: |
+    Dr. Giordon Stark is a Deaf post-doctoral, experimental particle physicist
+    involved with the ATLAS collaboration at the Santa Cruz Institute for
+    Particle Physics, at UC Santa Cruz. He earned his PhD in Physics from
+    University of Chicago in 2018, and a B.S in Physics from Caltech in 2012.
+    Giordon's research focuses on looking for signs of physics Beyond the
+    Standard Model with a particular interest in Electroweak Supersymmetry and
+    hadronic final states. He is also passionate about boosted object
+    reconstruction, jet substructure, pile-up mitigation techniques, designing
+    robust hardware triggers, the intersection of particle physics & machine
+    learning, and more!
+
+    Through these efforts, Giordon has also made core contributions to
+    improving the communication of physics results between the ATLAS
+    Collaboration and particle physics theorists and phenomenologists. He also
+    led a group of physicists within the experiment to combine and summarize
+    the results of many BSM searches, providing key insights for the future of
+    the successful ATLAS SUSY search program. These results will be made public
+    later this year. When Giordon is not busy trying to prove the existence of
+    SUSY, he can be found in the kitchen proving sourdoughs, baking pavlovas,
+    and anything else he can get his hands on.
+- date: 2023-06-28
+  cancelled: false
+  guest: "Leah Wasser"
+  title: Diverse Community Around the Open Tools that Drive Open Science
+  youtube: "https://www.youtube.com/watch?v=q382mk8Aw0s&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=20"
+  description: |
+    Our core program is a peer review of open source software which seeks to
+    improve the quality and usability of python tools that scientists depend on
+    to process, visualize and analyze their data. We also have been working on
+    guides to help scientists better understand how to package code so others
+    can use it.
+
+    In this session, Leah, provides an overview of our peer review process and
+    packaging guide. She will also discuss how pyOpenSci provides support and
+    visibility for maintainers who are creating scientific Python tools.
+  bio: |
+    Leah is a Remote Sensing Ecologist by training. Data scientist and educator
+    by passion. She develops and leads programs that support Open Science through
+    community building, outreach and education. I am also an avid long distance
+    mountain trail runner.
+
+    Leah founded and is now the Executive Director of pyOpenSci - a diverse,
+    global community that supports the Python tools that drive open science
+    through open peer review, training and mentorship.
+- date: 2023-05-31
+  cancelled: false
+  guest: Rafael Ferreira da Silva
+  title: "Workflows Community Initiative & PSI/J Python Reference Implementation"
+  youtube: "https://www.youtube.com/watch?v=H0UeBvZEIFA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=21"
+  description: |
+    Scientific workflows are critical tools in modern scientific computing,
+    enabling the orchestration of large and complex experiments that span
+    multiple facilities and computational resources. The Workflows Community
+    Initiative (https://workflows.community) is a collaborative effort aimed at
+    advancing the state-of-the-art in workflow systems and related
+    technologies.
+
+    The initiative brings together researchers, developers, and practitioners
+    to foster communication and collaboration on important issues related to
+    workflow management, including workflow design, execution, monitoring,
+    optimization, and interoperability. As part of the DOE ECP’s ExaWorks
+    project, we have defined PSI/J (Portable Submission Interface for Jobs), a
+    simple and portable interface for submitting jobs to distributed computing
+    resources, regardless of their underlying architecture or middleware. Our
+    Python-based reference PSI/J implementation supports a range of job
+    submission types, including batch jobs, parallel jobs, and interactive
+    jobs.
+  bio: |
+    Rafael Ferreira da Silva is a Senior Research Scientist in the National
+    Center for Computational Sciences (NCCS) at the Oak Ridge National
+    Laboratory (ORNL), where he also serves as the Executive Director of the
+    Workflows Community Initiative. With a strong research focus on the
+    efficient and resilient execution of large-scale scientific workflow
+    applications on heterogeneous distributed systems, as well as the modeling
+    and simulation of parallel and distributed computing systems, Dr. Ferreira
+    da Silva has led and contributed to numerous large-scale projects related
+    to distributed computing platforms, cyberinfrastructure systems, and
+    applications. Dr. Ferreira da Silva's expertise also extends to community
+    engagement and workshop organization. He has served as the principal
+    investigator on several U.S. DOE- and NSF-funded projects, and his
+    scholarly work includes over 100 peer-reviewed journal articles, conference
+    proceedings articles, book chapters, editorials, and conference abstracts.
+    Dr. Ferreira da Silva is a member of the Association for Computing
+    Machinery (ACM), and a Senior Member of the Institute of Electrical and
+    Electronics Engineers (IEEE). For more information about his work and
+    accomplishments, please visit https://rafaelsilva.com.
+- date: 2023-04-26
+  cancelled: false
+  guest: Talley Lambert
+  title: "DLSIA, or Deep Learning for Scientific Image Analysis"
+  youtube: "https://www.youtube.com/watch?v=jNlKvhmqFbE&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=22"
+  description: |
+    Talley presented the motivation and general design of magicgui, a python
+    library that facilitates the autogeneration of GUIs based on type
+    annotations. In its high level interface, magicgui attempts to solve this
+    by mapping python type annotations to widgets (for those familiar with
+    ipywidgets, the goal is similar to `ipywidgets.interact`).
+
+    At a lower level, magicgui provides a widget abstraction on top of GUI
+    frameworks like Qt, or ipywidgets; this allows magicgui code to (mostly) work
+    in both a jupyter-notebook environment, or a Qt-desktop environment (or
+    anything for which a backend UI adapter exists: a textual UI adapter is in
+    the works).
+  bio: |
+    Talley Lambert has a PhD in neurobiology, but has focused on microscopy and
+    bio-image analysis for the last 10 years. He is a lecturer at Harvard
+    Medical School, and works in a light microscopy core facility where he
+    specializes in advanced light microscopy techniques including light sheet
+    and super-resolution microscopies. He is a core developer on the napari
+    project, and contributes to many open source Python projects.
+- date: 2023-03-29
+  cancelled: false
+  guest: Eric Roberts and Peter Zwart
+  title: "DLSIA, or Deep Learning for Scientific Image Analysis"
+  youtube: "https://www.youtube.com/watch?v=--8V9ApAYqk&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=23"
+  description: |
+    We introduce a new python software library DLSIA, or Deep Learning for
+    Scientific Image Analysis, which offers users a friendly API for flexible
+    deployment of fully customizable, well-established deep convolutional
+    neural networks – Autoencoders, U-Nets, U-Net3+ (U-Net augmented with dense
+    skip connections), and mixed-scale dense networks (MSDNets) – in addition
+    to to more novel choices of networks, such as sparse mixed-scale networks
+    (SMSNets), a lean, lower-parameter, and sparsely-connected MSDNet variant
+    based on stochastically-generated graph networks. Overall, with the release
+    of DLSIA, we aim to provide flexible deep learning routines and end-to-end
+    frameworks to aid National Laboratory scientists in many of their image
+    analysis tasks and challenges, including image segmentation, denoising,
+    unsupervised clustering, and uncertainty quantification. In this talk, we
+    showcase the ease-of-use and flexibility of the DLSIA library by
+    highlighting use-cases involving...
+    - pixel-by-pixel segmentation of volumetric, in-situ, sub-nuclear biological structures,
+    - inpainting/estimating missing pixel data behind detector gaps in experimental X-ray scattering images,
+    - image clustering via autoencoder latent space, and
+    - multi-network aggregation in tomographic imaging.
+  bio: |
+    An applied mathematician by training, Eric Roberts received his PhD from
+    the University of California, Merced investigating topological fluid
+    dynamics through the lens of computational geometry. Starting his career at
+    Lawrence Berkeley National Lab in 2020 and advancing to research scientist
+    within the applied mathematics (CAMERA) and biosciences (MBIB) divisions,
+    Eric now focuses on synthesizing deep learning tools and building
+    end-to-end frameworks and PyTorch-leveraged solutions for a variety of
+    challenging image analysis tasks across a wide array of fields, including
+    x-ray scattering data and a wide array of microscopy modalities. Other
+    research interests include sparsely-connected deep learning architectures,
+    self-supervised ML, and CNN-derived latent/feature space exploration.
+
+    Peter Zwart is a highly accomplished scientist with a diverse background in
+    chemistry and algorithm development. He obtained his PhD in chemistry from
+    the University of Amsterdam and the European Molecular Biology Laboratory
+    (EMBL) in Hamburg, Germany, and has worked in several national labs such as
+    Brookhaven, Argonne, and Berkeley, where he has gained extensive experience
+    in developing algorithms for the analysis of experimental data. Currently,
+    as a staff scientist at Berkeley National Lab, Peter Zwart continues to
+    focus on algorithm development for the analysis of experimental data,
+    contributing significantly to advancements in various fields such as
+    materials science, physics, and chemistry.
+- date: 2023-02-22
+  cancelled: false
+  guest: "Leland McInnes & John Healy"
+  title: "A History of UMAP As a Python Open Source Project"
+  youtube: "https://www.youtube.com/watch?v=vCJKbqMwrYw&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=24"
+  description: |
+    John and Leland discuss how UMAP As a Python Open Source Project became the
+    way it is. They trek through the journey of developing UMAP going all the
+    way back to PyCon 2016 with HDBSCAN package, and the rest is as they say,
+    history.
+  bio: |
+    Leland McInnes is a researcher at the Tutte Institute for Mathematics and
+    Computing, maintainer for a variety machine learning packages (umap-learn,
+    hdbscan, pynndescent, enstop), and a Scikit-learn and Scikit-TDA
+    contributor.
+
+    John Healy is a researcher and data scientist at the Tutte Institute for
+    Mathematics and Computing, as well as a maintainer on a variety of data
+    science Python packages, including umap-learn, hdbscan, vectorizers and
+    thisnotthat.
+- date: 2023-01-26
+  cancelled: false
+  guest: Pablo Galindo Salgado
+  title: "What we are doing to make Python faster"
+  youtube: "https://www.youtube.com/watch?v=9V3t2LZjeRo&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=25"
+  description: |
+    Python 3.11 is faster than previous Python versions. This is the result of
+    the effort of the Faster CPython collaboration, which is a team that Guido
+    van Rossum started at Microsoft and that later some other contributors and
+    core devs (including myself) joined as collaborators. In this discussion, I
+    will go into detail on how we are making Python faster, what techniques are
+    we using, what challenges are we facing, and what may be stored for future
+    versions.
+  bio: |
+    Pablo Galindo Salgado works in the Python Infrastructure team at the
+    Software Infrastructure department at Bloomberg L.P. He is a CPython core
+    developer and a Theoretical Physicist specializing in general relativity
+    and black hole physics. He is currently serving on the Python Steering
+    Council and he is the release manager for Python 3.10 and 3.11. He has also
+    a cat but he does not code.
+- date: 2022-11-30
+  cancelled: false
+  guest: Todd Gamblin
+  title: "Sustaining the HPC software ecosystem with Spack"
+  youtube: "https://www.youtube.com/watch?v=vUtDpAPNW5w&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=26"
+  description: |
+    Spack is an open source package management tool, written in Python, that
+    simplifies the process of building and installing scientific software. It is
+    used widely in the HPC community — by end users, HPC facility staff, and
+    software developers who need to manage dependencies. Spack is very general; it
+    is designed to allow packages to be built with many different versions,
+    configurations, build options, and compiler flags, for CPU and GPU machines.
+    This talk will give an overview of Spack, its community, and how enables users
+    to be more productive.
+
+    This discussion will give an overview of Spack, its community, and how it enables users to be more productive.
+  bio: |
+    Todd Gamblin is a Distinguished Member of Technical Staff in the Livermore
+    Computing division at Lawrence Livermore National Laboratory. He created
+    Spack, a popular open source HPC package management tool with a rapidly
+    growing community of contributors. He leads the Packaging Technologies
+    Project in the U.S. Exascale Computing Project, LLNL's DevRAMP project on
+    developer productivity, and an LLNL Strategic Initiative on software
+    integration. His research interests include dependency management, software
+    engineering, parallel computing, performance measurement, and performance
+    analysis.
+- date: 2022-10-26
+  cancelled: false
+  guest: "Emanuele Laface"
+  title: Python in particle accelerators
+  youtube: "https://www.youtube.com/watch?v=V-SWyCyFNSY&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=27"
+  description: |
+    Python is a daily instrument in science for data analysis, modeling and
+    computing in general. In this talk, I will discuss the role of Python at
+    the European Spallation Source, a particle accelerator facility for neutron
+    production. I will briefly describe the science that a neutron source can
+    achieve and then my discussion will be focused on the use of Python in our
+    laboratory. In particular, I will talk about Python and Jupyter in the
+    control system of the particle accelerator as a front-end to access the
+    multiple systems used to archive data, query the accelerator devices, and
+    simulate online the dynamics of the particle beam.
+  bio: |
+    An accelerator physicist, Emanuele received his PhD on the upgrade of the
+    Large Hadron Collider at CERN with the Université Blaise Pascal,
+    Clermont-Ferrand II in 2008 and is currently responsible for the physics of
+    the control system for the European Spallation Source facility in Lund,
+    Sweden. He codes in Python mainly for the control system of the particle
+    accelerator will discuss more or less what they do with Jupyter in their
+    environment.
+- date: 2022-09-28
+  cancelled: false
+  guest: Draga Doncila Pop & Juan Nunez-Iglacias
+  title: "The napari n-dimensional array viewer with Py-ART"
+  youtube: "https://www.youtube.com/watch?v=0Kwb7VHofCE&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=28"
+  description: |
+    Juan and Draga will discuss napari, a Python package for fast array
+    visualization that is equally comfortable working with 2D, 3D, and
+    higher-dimensional image data. Napari can overlay images with the results
+    of downstream processing steps, enabling quality control as well as manual
+    intervention at critical stages — a workflow that previously involved
+    shuttling of data between disparate tools.
+
+    They will also discuss napari's plugin interface, which can be used to
+    extend its functionality, and to distribute new tools and methods to
+    collaborators (who may have less Python experience) and the broader
+    scientific community.
+  bio: |
+    Juan: "I’m currently a Senior Research Fellow at Monash University in
+    Melbourne, Australia. My scientific path started in genetics and
+    biochemistry, continued through computational biology and bioinformatics,
+    then to image analysis — where I connected with the Scientific Python
+    community and got hooked on open source development. I’ve since become a
+    core developer on scikit-image, co-authored the book Elegant SciPy, and
+    co-founded the napari library for image visualisation, annotation, and
+    analysis."
+
+    Draga: "I am currently a PhD student working on an open source interactive
+    interface for cell segmentation and tracking optimisation. I work part time
+    as a software engineer making contributions to open source software, and am a
+    napari core developer. I am passionate about scientific software, open source
+    development and open research. I love sharing my knowledge with others and
+    making software development accessible for all."
+- date: 2022-08-31
+  cancelled: false
+  guest: Maxwell Grover and Zachary Sherman
+  title: "Enabling the Open Radar Science Community with Py-ART"
+  youtube: "https://www.youtube.com/watch?v=MVchHrpBPfI&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=29"
+  description: |
+    The Python ARM Radar Toolkit, Py-ART, is a Python module containing a
+    collection of weather radar algorithms and utilities. Py-ART is used by the
+    Atmospheric Radiation Measurement (ARM) Climate Research Facility for
+    working with data from a number of its precipitation and cloud radars, but
+    has been designed so that it can be used by others in the radar and
+    atmospheric communities to examine, processes, and analyze data from many
+    types of weather radars.
+
+    We discuss the growth of this toolkit, where it fits into the general open radar science community, and future directions of the package!
+  bio: |
+    Maxwell Grover attended Valparaiso University, where he received a
+    Bachelors of Science in Meteorology, and went on to obtain a Masters of
+    Science in Atmospheric Science from the University of Illinois
+    Urbana-Champaign, where he researched severe storms in South America.
+
+    He went on to work at the National Center for Atmospheric Research, in the
+    Climate and Global Dynamics laboratory, where he worked with the Pangeo
+    community to develop open-source tools (ex. intake-esm) to analyze terabyte
+    and petabyte scale datasets and led activities related to the Earth System
+    Data Science initiative.
+
+    Max now works as a software developer at Argonne National Laboratory,
+    primarily working with the Atmospheric Radiation Measurement (ARM) User
+    Facility, focused on developing open-source tools to improve how we work
+    with climate and weather datasets. He is one of the primary developers for
+    the Python ARM radar toolkit (Py-ART) and the Atmospheric Data Community
+    Toolkit (ACT). While his background is in meteorology and atmospheric
+    science, his passion is software engineering, working with scientists to
+    find ways to improve their software tools and general data workflows,
+    advocating for open science practices.
+
+    Zachary Sherman attended Lewis University, where he received a Bachelors of
+    Science in Environmental Science and Sustainability.
+
+    He participated in the Student Laboratory Undergraduate Internship (SULI)
+    at Argonne National Laboratory in the Tribology department where he studied
+    friction and wear on a variety of systems. Then participated in the Student
+    Research Participant (SRP) program in the Atmospheric Radiation Measurement
+    Facility (ARM) studying velocity dealiasing of storms using the Python ARM
+    Radar Toolkit (Py-ART).
+
+    Zach now works as a software developer at Argonne National Laboratory
+    working between ARM and the Geospatial Computing Innovations, and Sensing
+    (GCIS). Zach works primarily as a developer on Py-ART as well as the
+    Atmospheric Community Toolkit (ACT). Zach started with little software
+    knowledge, but over time developed a passion for open source software and
+    developing tools to help individuals with their research utilizing Python
+    and many tools in the Scientific Python Stack as well as utilizing and
+    teaching coding practices such as continuous integration, PEP8 and more.
+- date: 2022-07-27
+  cancelled: false
+  guest: Jan Janssen
+  title: pyiron – an integrated development environment (IDE) for scientific workflows at scale
+  youtube: "https://www.youtube.com/watch?v=Mbsnf6B05pA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=30"
+  description: |
+    With the first Exascale computers becoming available and with machine
+    learning becoming a fundamental building block of many research projects,
+    we have to rethink the way we manage our simulations and analysis. Moving
+    away from shell scripts and a zoo of different utilities and simulation
+    codes, pyiron[1,2], in analogy to an integrated development environment
+    (IDE), provides a central interface for rapid prototyping and up-scaling
+    simulation protocols. The whole simulation lifecycle is represented in
+    pyiron by a class of generic objects – the pyiron objects – which connect
+    to the job management, the data storage interface and the user interface.
+    As a result, the individual objects can be combined like building blocks
+    to construct complex simulation protocols and enable the automation of
+    routine tasks.
+
+    For more information, visit the pyIron website: www.pyiron.org
+  bio: |
+    Jan Janssen is a Postdoctoral research associate at the Los Alamos National
+    Laboratory interested in atomistic simulations for materials science.
+
+    As part of his PhD, he developed the open-source workflow framework pyiron,
+    which couples atomistic simulation codes written in Fortran, C or C++ to a
+    modern jupyter-based user interface, data storage and job management. With
+    this combination pyiron enables rapid prototyping and up-scaling of
+    simulation protocols for exascale computing and is applied for parameter
+    studies in materials science ranging from uncertainty quantification for
+    density functional theory to the prediction of melting temperatures for
+    interatomic potentials and beyond.
+
+    Besides leading the development of pyiron, Jan maintains over 430 materials
+    science related software packages for the conda-forge community channel and
+    is a regular contributor to python-based materials science software.
+- date: 2022-06-29
+  cancelled: false
+  guest: Matthew Feickert, Gordon Watts, and Jim Pivarski
+  title: "The Modern Python Analysis Ecosystem for High-energy Physics"
+  youtube: "https://www.youtube.com/watch?v=tasraCdle30&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=31"
+  description: |
+    The landscape for analysis tools in experimental particle physics has
+    changed drastically over the last decade, with a growing community movement
+    from C++ frameworks to an ecosystem of interoperable Pythonic data analysis
+    tooling. This movement has been spearheaded and supported by the Scikit-HEP
+    organization and the Institute for Research and Innovation in Software for
+    High Energy Physics (IRIS-HEP), which seek to provide the computational and
+    data science open source tools that will enable physicists to have
+    extensible toolkits for approaching the data-intensive challenges of the
+    High Luminosity Large Hadron Collider (LHC) and beyond.
+  bio: |
+    Matthew Feickert is a postdoctoral researcher in experimental high-energy
+    physics and data science at the American Family Insurance Data Science
+    Institute at the University of Wisconsin-Madison.
+
+    He works as a member of the ATLAS collaboration on searches for physics
+    beyond the standard model with experiments performed at CERN’s Large Hadron
+    Collider (LHC) in Geneva, Switzerland. He is also a researcher for the
+    Institute for Research and Innovation in Software for High Energy Physics
+    (IRIS-HEP) developing analysis tools and workflows for the next generation
+    of physics analyses at the LHC.
+
+    Jim Pivarski was trained as a particle physicist with a Ph.D. from Cornell
+    and helped commission the CMS experiment at the Large Hadron Collider
+    (LHC). He then worked as a data scientist at Open Data Group for 5 years.
+
+    In 2016, he joined Princeton as a computational physicist, where he
+    develops software tools for data analysis, including Uproot, to read data
+    files in the ROOT format, and Awkward Array, to manipulate arrays of data
+    structures.
+
+    Recently, he has been supporting applications of Awkward Array beyond
+    particle physics, such as particle astrophysics, cartography, and
+    oceanography.
+
+    Gordon Watts is a professor at the University of Washington, Seattle. His
+    research concentrates on searches for long-lived particle using CERN’s
+    Large Hadron Collider and is a member of the ATLAS Experiment.
+
+    He is also deputy executive director of the Institute for Research and
+    Innovation in Software for High Energy Physics (IRIS-HEP). His research
+    concentrates on analysis and reducing the time-to-insight in data analysis
+    by developing new workflows and tools.
+- date: 2022-05-25
+  cancelled: false
+  guest: Matthias Bussonnier
+  title: "The Needles in the Growing Haystack"
+  youtube: "https://www.youtube.com/watch?v=R6SggTsv9_w&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=32"
+  description: |
+    The more widespread Scientific Python becomes, the more the distributed
+    nature and multiple projects will make it hard for newcomers to understand
+    the landscape. In particular, documentation for "All in one" proprietary
+    and closed source solutions is easier to find. Now that the world is
+    hyper-connected, computing is ubiquitous and CI virtually free, I believe
+    we can have a much better documentation experience.
+  bio: |
+    Matthias Bussonnier is a Software Engineer, and long-time open source
+    contributor to many projects from the scientific stack. He has been a
+    maintainer of IPython for over 10 years, and co-founder of Jupyter, for
+    which he shares the ACM System Software award in 2017.
+
+    His training as a physicist and experiences at multiple research institutes
+    (SLAC, Institut Curie, UC Berkeley, LBNL, UC Merced) put him in a perfect
+    position to understand the computation and programming needs of researchers
+    and scientists in many fields.
+
+    He currently applies this knowledge at QuanSight Labs, where he helps push
+    several projects forward. His current focus is on Napari (Multi-dimensional
+    image viewer for Python), and Papyri: a project to push the capabilities of
+    Python Documentation forward.
+
+    During the nights and weekends, Matthias Bussonnier also works tirelessly to
+    interface with the users and contributors in open source communities around
+    issues of mentorship, sustainability, security, diversity and inclusion. He
+    is currently also helping to bring more Scientific Python to Social and Human
+    Sciences in France (and in French) via classes and book co-authoring.
+- date: 2022-04-27
+  cancelled: false
+  guest: Wolfgang Kerzendorf
+  title: Exploding Stars on Your Computer
+  youtube: "https://www.youtube.com/watch?v=LQ6-D54_d9I&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=33"
+  description: |
+    Wolfgang discusses fundamental questions of Astrophysics and how we can use AI & Physics
+    to better understand the universe at large.
+  bio: |
+    Wolfgang Kerzendorf is Assistant Professor, Department of Physics and
+    Astronomy; Department of Computational Mathematics, Science, and
+    Engineering, Michigan State University
+
+    Before joining MSU, Dr. Kerzendorf was an astronomer at ESO, where he
+    started in late 2014 as an ESO Fellow. Before that, he was a Postdoctoral
+    Research Fellow at the University of Toronto. His thesis, titled "Type Ia
+    Supernovae: Progenitors and explosions", was finished in 2011 at the
+    Australian National University.
+- date: 2022-03-30
+  cancelled: false
+  guest: Laurie Stephey and Daniel Margala
+  title: An overview of Python at NERSC in the era of Perlmutter
+  youtube: "https://www.youtube.com/watch?v=GSpGpiIfAGw&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=34"
+  description: |
+    We discussed scaling Python on large-scale GPU systems, as well as how to manage those systems and promote the usage of those systems.
+  bio: |
+    Laurie Stephey is a Scientific Data Architect in the Data and Analytics
+    Services group at NERSC. She started at NERSC as a postdoc working on Python
+    optimization targeted at Cori’s Intel’s KNL architecture for the Dark Energy
+    Spectroscopic Experiment processing pipeline. She now works on larger Python
+    strategy and stewardship at NERSC with a focus on helping Python and
+    data-intensive users be productive on NERSC systems. She works closely with
+    two of NERSC’s “Superfacility” experimental teams: DESI and a team targeting
+    real-time analysis for KSTAR, a Korean tokamak. She also works on efforts to
+    maintain and expand NERSC’s user-facing container infrastructure. Finally,
+    she is on the team helping to plan and procure NERSC’s next system N10.
+
+    Daniel Margala recently joined the Data & Analytics Services group at NERSC
+    to help scientific Python users at NERSC effectively use GPUs on the new
+    Perlmutter system. Previously, as a postdoc in the NERSC Exascale Science
+    Application Program (NESAP), he worked with the Dark Energy Spectroscopic
+    Instrument (DESI) to leverage GPUs in their data processing pipeline which
+    is implemented primarily in Python.
+- date: 2022-01-26
+  cancelled: false
+  guest: Thoms Caswell and Juliane Reinhardt
+  title: An overview of Python at NERSC in the era of Perlmutter
+  youtube: "https://www.youtube.com/watch?v=GSpGpiIfAGw&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=34"
+  description: |
+    During this session, we introduced our newest committee members and took a
+    look ahead to what 2022 might hold for Python and the PyData community.
+
+    We also discussed some of the projects and initiatives our host panelists
+    are working on and they shared their views on the direction Python and
+    PyData are headed.
+  bio: ""
+- date: 2021-12-01
+  cancelled: false
+  guest: "Ross Barnowski and Stéfan van der Walt"
+  title: "Python: the language for effective scientific computing"
+  youtube: "https://www.youtube.com/watch?v=pphIbUpGmFA&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=36"
+  description: ""
+  bio: |
+    Ross Barnowski is a scientific software developer at the Berkeley Institute
+    for Data Science (BIDS) supporting open-source scientific Python projects.
+    He is active in both the NumPy and NetworkX projects, and interested in the
+    entire scientific Python ecosystem. Ross has been involved in open source
+    software for reproducible, collaborative science since 2015, primarily in
+    his role as an educator. He holds a PhD in nuclear engineering from UC
+    Berkeley and previously served as an assistant research scientist and
+    lecturer in the department of nuclear engineering, teaching the
+    graduate-level lab in nuclear instrumentation.
+
+    Stéfan van der Walt is a senior research data scientist at the Berkeley
+    Institute for Data Science, the founder of scikit-image, and co-author of
+    "Elegant SciPy: The Art of Scientific Python". Nowadays, he spends much of
+    his time coordinating the Scientific Python ecosystem in which he has been
+    involved for for more than fifteen years. He is a director of NumFOCUS, and
+    serves on the steering committees of NumPy, SciPy, and the PSF's Scientific
+    Working Group. Outside (and sometimes during) work, he is kept on his toes by
+    two energetic toddlers, and enjoys running in the great outdoors.
+- date: 2021-10-27
+  cancelled: false
+  guest: Aric Hagberg
+  title: "Exploring network structure, dynamics, and function using NetworkX"
+  youtube: "https://www.youtube.com/watch?v=3UQTndqa7lw&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=37"
+  description: |
+    NetworkX is a software tool for network science. I'll tell the previously
+    untold story of how the software project started at Los Alamos and describe
+    the original design goals. The software scope was driven by research
+    applications such as disease spread, cybersecurity, and measuring scholarly
+    impact. I'll describe these applications and the algorithms and analyses
+    that were developed to support them.
+  bio: |
+    Our guest was Aric Hagberg who is the Deputy Division Leader of the
+    Computer, Computational, and Statistical Sciences Division at Los Alamos
+    National Laboratory.
