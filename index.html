@@ -76,10 +76,10 @@
                                     WEDNESDAY
                                 </div>
                                 <div class="day">
-                                    June
+                                    July
                                 </div>
                                 <div class="date">
-                                    25
+                                    30
                                 </div>
 
                                 <div class="time">
@@ -96,20 +96,33 @@
                         <h2 style="text-align: center;" class="mt2">Our Guest Panelist will be:</h2>
 
                         <div style="display: flex; align-items: center; justify-content: center">
-                          <img src="img/Gijs Burghoorn headshot.png" alt="photo of Gijs Burghoorn"></img>
+                          <img src="img/jan-janssen.jpg" alt="photo of Jan Janssen"></img>
                         </div>
-                        <h1 style="text-align: center;" class="lb2">Gijs Burghoorn </h1>
+                        <h1 style="text-align: center;" class="lb2">Jan Janssen</h1>
 
-                        <h2 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Diving into Parquet Read Optimization&CloseCurlyDoubleQuote;
+                        <h2 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Up-scale Python Functions for High-Performance Computing with executorlib&CloseCurlyDoubleQuote;
                         </h2>
 
                         <p class="mt2">
-                        Parquet is an important file-format used in data science world. It provides many opportunities for query optimization and data pruning. Based on our experience optimizing the Polars Parquet reader, we look through how Parquet stores data, its uses and rediscover many of the reader optimizations.
+                        With the raise of machine-learned interatomic potentials in the atomistic simulation community in Materials Science, the complexity of simulation workflows changed from directed acyclic graph (DAG) based simulation workflows with typically just a single simulation code to simulation workflows coupling simulation codes at different length and time scales and thousands of individual simulations. To orchestrate these workflows a number of simulation frameworks were developed. Still as part of the Exascale Computing Project we realized these were limited in their flexibility and scalability.
                         </p>
+
+                        <p class="mt1">
+                        So, we developed executorlib[1] based on the concurrent futures Executor interface in the Python standard library and with the goal to distribute Python functions over hundreds of compute nodes. Internally, executorlib leverages the Simple Linux Utility for Resource Management (SLURM) and the flux framework from Lawrence Livermore National Laboratory [2] to up-scale simulation workflows from a workstation or traditional high-performance computers (HPC) to the latest generation of Exascale machines. In contrast to previous solutions, it does not require any daemon process or database but instead directly interfaces with the job manager to maximize computational efficiency.  At the same time, it is designed with a focus on debugging capabilities to minimize the overhead of migrating workflows to the Exascale machines.
+                        </p>
+
+                        <p class="mt1">
+                        In this presentation I introduced executorlib, highlighting the lessons learned from development of the pyiron atomistic simulation suite which led to the development of executorlib as minimalistic workflow manager. Finally, I highlight the general applicability of executorlib to distribute python functions of any scientific domain on HPC clusters of all sizes.
+                        </p>
+
+                        <div class="mt1">
+                          <p>[1]: Janssen et al., JOSS, 10(108), 7782, (2025).</p>
+                          <p>[2]: Dong H. Ahn et al., Fut. Gen. Comp. Sys., 110, (2020).</p>
+                        </div>
 
                         <h2 style="text-align: center;" class="mt3 mb1">About Our Guest</h2>
                         <p class="mt2">
-                        Gijs is a Software Engineer and OSS maintainer at Polars. He has Masters degree in Cybersecurity from Université Grenoble Alpes and has worked on hardware testing and simulation at the TU Delft. At Polars, he has spend time on improving the Parquet read and write performance.
+                        Jan Janssen is the group leader for Materials Informatics at the Max Planck Institute for Sustainable Materials. His group focuses on applying methods from computer science including machine learning to discover novel sustainable materials with applications ranging from machine-learned interatomic potentials to large language model agents for atomistic simulation. Previously, Jan was a director’s postdoctoral fellow in the T-division at Los Alamos National Laboratory as part of the Exascale Computing Project as well as an invited postdoctoral fellow at the University of Chicago and the University of California Los Angeles. Besides his research work, Jan is the lead developer of the pyiron atomistic simulation suite, maintains over 900 open-source materials informatics software packages for the conda-forge community and is a regular contributor to open-source software on Github.
                         </p>
 
                         <h3 class=" mb2 mt3 align--center">Zoom Webinar Link:<a href="https://us02web.zoom.us/j/86983750107"><button style="background-image: linear-gradient(135deg, #485f5c 10%, #7583a3 100%);
@@ -127,6 +140,13 @@
                           <a href="https://www.youtube.com/playlist?list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y" target="_blank" class="yt-button pb5" style="display: flex; flex-direction: column; align-items: center">
                             <h4 class="pt1 mb0">The Python Exchange YouTube Playlist</h4>
                           </a>
+                        </div>
+
+                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
+                            <h3>June 25, 2025</h3>
+                            <h3 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Diving into Parquet Read Optimization&CloseCurlyDoubleQuote;</h3>
+                            <h4 style="text-align: center;" class="lb2">Gijs Burghoorn</h4>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/f9lG3zDoiBc?si=OZaO8g0cKWr6C-K-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
 
                         <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
@@ -157,15 +177,6 @@
                             <h3>&OpenCurlyDoubleQuote;Accelerate your Python code with Rust&CloseCurlyDoubleQuote;</h3>
                             <h4>Juan Luis Cano Rodríguez</h4>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/k2_Qcp9yRcA?si=OR6KnUWefkfehXO4" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen></iframe>
-                        </div>
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
-                            <h3>December 4th, 2024</h3>
-                            <h3>&OpenCurlyDoubleQuote;Possible futures for Jupyter&CloseCurlyDoubleQuote;</h3>
-                            <h4>Sylvain Corlay</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/929dki4gIlw?si=YTSskQ8oha-kpjwd" title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                                 allowfullscreen></iframe>
                         </div>
