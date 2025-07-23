@@ -10,7 +10,7 @@ structure:
 	@ln -sfr -t "$(DST)" "$(SRC)"/*
 	@rm "$(DST)"/**.j2
 
-render:
+render: structure
 	@python scripts/jinja.py "$(SRC)" "$(DST)"
 
 serve: structure
