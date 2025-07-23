@@ -1,0 +1,84 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+{% include "templates/components/header.html.j2" %}
+
+<main>
+  <section id="exchangeDate" class="d-flex flex-column align-items-center py-5 bg-dutc-yellow">
+    {% if upcoming is none %}
+      <h2>Check Back Later for More Information!</h2>
+    {% elif upcoming.cancelled %}
+      <h2>The next Python Exchange has been cancelled!</h2>
+      <div class="weekday_name">{{ upcoming.date.strftime('%A') }}</div>
+      <div class="month">{{ upcoming.date.strftime('%B') }}</div>
+      <div class="day">{{ upcoming.date.day }}</div>
+    {% else %}
+      <h2 class="text-center mb-0">“{{ upcoming.title }}”</h2>
+      <span>with <span class="fs-5">{{ upcoming.guest }}</span></span>
+
+      <div class="calendar-box d-flex flex-column fw-bold text-center mt-3">
+        <span class="bg-dutc-salmon text-white py-1 fs-3">{{ upcoming.date.strftime('%A') }}</span>
+        <span class="bg-dutc-turquoise text-white py-1 fs-3">{{ upcoming.date.strftime('%B') }}</span>
+        <span class="bg-white text-dutc-salmon fs-1">
+          {{ upcoming.date.day | ordinal }}<br/>
+          4:00 pm ET
+        </span>
+      </div>
+
+      <div class="container text-center">
+        <a class="btn btn-turquoise mt-2" href="./doepy-invite.ics">Download the ICS file</a>
+        <a class="btn btn-salmon mt-2" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=bzl1ajcwbHJzMjZ1a2RydWlydWJlOWs3YnJfMjAyNTAxMjlUMjEwMDAwWiBjXzVkbmNtYnBvMTRwMnJwdXUzZTZib29zZms4QGc&tmsrc=c_5dncmbpo14p2rpuu3e6boosfk8%40group.calendar.google.com&scp=ALL">
+          Add to Google Calendar
+        </a>
+      </div>
+
+      <div class="container mt-3 p-4 bg-white rounded border border-5 border-salmon">
+        {{ upcoming.description | markdown }}
+      </div>
+      <a href="https://us02web.zoom.us/j/86983750107" class="btn btn-salmon mt-2" role="button">Attend The Event Here!</a>
+    {% endif %}
+  </section>
+
+  {% if upcoming is not none and not upcoming.cancelled %}
+  <section id="guestPanelist" class="py-3 bg-dutc-turquoise">
+    <div class="container">
+      <h2 class="text-center">Meet {{ upcoming.guest }}</h2>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-lg-4">
+          <img class="img-fluid mw-25" src="{{ upcoming.headshot }}" alt="photo of {{ upcoming.guest }}"></img>
+        </div>
+
+      <div class="col-12 col-lg-6">
+        {{ upcoming.bio | markdown }}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section id="pastEvents" class="py-3 d-flex flex-column align-items-center bg-dutc-salmon">
+    <h2>Recent Events</h2>
+    {% set past_events = past_events[:3] %}
+    {% include "templates/components/past_events.html.j2" %}
+    <a href="past.html" class="btn btn-lg btn-turquoise mt-3 px-5">View All Past Events</a>
+  </section>
+
+  <section id="about" class="py-3 d-flex flex-column align-items-center bg-dutc-darkblue text-white">
+    <h2>About Us</h2>
+    <div class="container">
+      <p>
+        At Don’t Use This Code, we want to create a unique opportunity to see
+        Python succeed and thrive within the National Labs! We propose creating a
+        new resource for scientists, researchers, and technical staff to support
+        their use of Python and to build a strong, lasting community for Python
+        users within the Department of Energy National Labs. Disclaimer: The Python
+        Exchange is an independent group of Python enthusiasts who wish to see the
+        use of Python and open-source computing thrive within the National Lab
+        system. This group is not sponsored by or affiliated with the Department of
+        Energy.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+{% endblock %}

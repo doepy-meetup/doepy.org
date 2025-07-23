@@ -1,198 +1,231 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="Cameron Riddell" />
-    <meta property="og:url" content="https://meetup.doepy.org/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Python Exchange" />
-    <meta property="og:image" content="http://meetup.doepy.org/img/doepylogo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="628" />
-
-    <title>DOEPy: Helping Python Thrive within the National Labs & Department of Energy</title>
-
-    <!-- The compiled CSS file -->
-    <link rel="stylesheet" href="css/production.css">
-
-    <!-- Web fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
-
-    <!-- favicon.ico. Place these in the root directory. -->
-    <link rel="shortcut icon" href="favicon.ico">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOEPy - The Python Exchange</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #1b264f;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      margin-left: 40px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #f47d7d;
+      font-size: 16px;
+    }
+    .hero {
+      background-color: #2e3e6f;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
+    .hero h1 {
+      font-size: 5rem;
+      margin: 0;
+      background: linear-gradient(90deg, #91dbf1, #c3dfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    .hero a {
+      color: #91dbf1;
+      text-decoration: underline;
+    }
+    .cta-button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border: 2px solid white;
+      border-radius: 30px;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #fff;
+      color: #2e3e6f;
+    }
+    .upcoming {
+      background-color: #faec74;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .upcoming h2 {
+      font-size: 2.5rem;
+      color: #1b264f;
+    }
+    .calendar-box {
+      display: inline-block;
+      text-align: center;
+      background-color: white;
+      border: 5px solid #1b264f;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 200px;
+      margin-top: 20px;
+    }
+    .calendar-box .top {
+      background-color: #f47d7d;
+      color: white;
+      font-weight: bold;
+      padding: 5px 0;
+    }
+    .calendar-box .middle {
+      background-color: #96d5e3;
+      color: white;
+      font-weight: bold;
+      padding: 5px 0;
+    }
+    .calendar-box .date {
+      font-size: 3rem;
+      color: #1b264f;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    .calendar-box .time {
+      font-size: 1.2rem;
+      color: #f47d7d;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .event-description {
+      max-width: 600px;
+      margin: 30px auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .speaker {
+      font-size: 1.5rem;
+      color: #f47d7d;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-
-<body class="has-animations">
-
-    <!-- Create outer border -->
-    <div class="page-border">
-        <div class="bg--white">
-
-            <!--  reveal-on-scroll is-revealing -->
-
-            <!-- Header -->
-            <header class="align--center pt3 pb2">
-                <div class="grid-row">
-                    <div class="grid-column span-12 mt2" style="padding: 0px 20px 0px 20px;">
-                        <img src="img/doepylogo.svg" width="10%">
-                        <h1>The Python Exchange:</h1>
-                        <h3 class="mb1">Helping Python Thrive within</br> the National Labs & Department of Energy</h3>
-                        <h3 class="mb1"><a style="color: #904644;" href="https://mailchi.mp/d4206414de7c/python-exchange-for-doe">Join the Python Exchange
-                                Mailing List!</a></h3>
-                    </div>
-                </div>
-
-                <!-- <div class="container" style="margin-top: 5px;">
-                    <h1 class="mb3">Announcement</h1>
-                    <h3>Details</h3>
-                </div> -->
-            </header>
-
-            <!-- Body -->
-            <main>
-
-                <div class="container">
-
-                    <!-- Main Info -->
-                    <section class="pt0" style="margin-bottom: 2rem;">
-                        <h2 class="mb2 align--center">The next Python Exchange is coming up!</h2>
-                        <!-- <h3 class="mb2 align--center">Join the mailing list (link above) to be notified of upcoming sessions</h3> -->
-                        <!-- <h2 class="mb2 align--center" style="color:red">NOTE SPECIAL DATE AND TIME</h2> -->
-                        <!-- <h2 class="mb2 align--center">Stay tuned for details!</h2> -->
-
-
-                        <div class="grid-column align--center mt1">
-                            <div class="box">
-                                <div class="calHeader">
-                                    WEDNESDAY
-                                </div>
-                                <div class="day">
-                                    July
-                                </div>
-                                <div class="date">
-                                    30
-                                </div>
-
-                                <div class="time">
-                                    4:00 pm ET
-                                </div>
-                            </div>
-                            <h3 class="mt1"><a style="color: #904644;" target="_blank"
-                                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=bzl1ajcwbHJzMjZ1a2RydWlydWJlOWs3YnJfMjAyNTAxMjlUMjEwMDAwWiBjXzVkbmNtYnBvMTRwMnJwdXUzZTZib29zZms4QGc&tmsrc=c_5dncmbpo14p2rpuu3e6boosfk8%40group.calendar.google.com&scp=ALL">Add
-                                    event to Google Calendar</a></h3>
-                            <h3 class="mt1"><a href="./invite.ics" style="color: #904644;">Download ICS file</a></h3>
-                        </div>
-
-
-                        <h2 style="text-align: center;" class="mt2">Our Guest Panelist will be:</h2>
-
-                        <div style="display: flex; align-items: center; justify-content: center">
-                          <img src="img/jan-janssen.jpg" alt="photo of Jan Janssen"></img>
-                        </div>
-                        <h1 style="text-align: center;" class="lb2">Jan Janssen</h1>
-
-                        <h2 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Up-scale Python Functions for High-Performance Computing with executorlib&CloseCurlyDoubleQuote;
-                        </h2>
-
-                        <p class="mt2">
-                        With the raise of machine-learned interatomic potentials in the atomistic simulation community in Materials Science, the complexity of simulation workflows changed from directed acyclic graph (DAG) based simulation workflows with typically just a single simulation code to simulation workflows coupling simulation codes at different length and time scales and thousands of individual simulations. To orchestrate these workflows a number of simulation frameworks were developed. Still as part of the Exascale Computing Project we realized these were limited in their flexibility and scalability.
-                        </p>
-
-                        <p class="mt1">
-                        So, we developed executorlib[1] based on the concurrent futures Executor interface in the Python standard library and with the goal to distribute Python functions over hundreds of compute nodes. Internally, executorlib leverages the Simple Linux Utility for Resource Management (SLURM) and the flux framework from Lawrence Livermore National Laboratory [2] to up-scale simulation workflows from a workstation or traditional high-performance computers (HPC) to the latest generation of Exascale machines. In contrast to previous solutions, it does not require any daemon process or database but instead directly interfaces with the job manager to maximize computational efficiency.  At the same time, it is designed with a focus on debugging capabilities to minimize the overhead of migrating workflows to the Exascale machines.
-                        </p>
-
-                        <p class="mt1">
-                        In this presentation I introduced executorlib, highlighting the lessons learned from development of the pyiron atomistic simulation suite which led to the development of executorlib as minimalistic workflow manager. Finally, I highlight the general applicability of executorlib to distribute python functions of any scientific domain on HPC clusters of all sizes.
-                        </p>
-
-                        <div class="mt1">
-                          <p>[1]: Janssen et al., JOSS, 10(108), 7782, (2025).</p>
-                          <p>[2]: Dong H. Ahn et al., Fut. Gen. Comp. Sys., 110, (2020).</p>
-                        </div>
-
-                        <h2 style="text-align: center;" class="mt3 mb1">About Our Guest</h2>
-                        <p class="mt2">
-                        Jan Janssen is the group leader for Materials Informatics at the Max Planck Institute for Sustainable Materials. His group focuses on applying methods from computer science including machine learning to discover novel sustainable materials with applications ranging from machine-learned interatomic potentials to large language model agents for atomistic simulation. Previously, Jan was a director’s postdoctoral fellow in the T-division at Los Alamos National Laboratory as part of the Exascale Computing Project as well as an invited postdoctoral fellow at the University of Chicago and the University of California Los Angeles. Besides his research work, Jan is the lead developer of the pyiron atomistic simulation suite, maintains over 900 open-source materials informatics software packages for the conda-forge community and is a regular contributor to open-source software on Github.
-                        </p>
-
-                        <h3 class=" mb2 mt3 align--center">Zoom Webinar Link:<a href="https://us02web.zoom.us/j/86983750107"><button style="background-image: linear-gradient(135deg, #485f5c 10%, #7583a3 100%);
-                                        border-width: 4px; border-radius: 5px; color:white; padding: 5px 20px; cursor: pointer;">Attend The Event Here!</button></a></h3>
-                    </section>
-
-
-                    <!-- * Past Events Section-->
-
-                    <section>
-                        <h2 style="text-align: center;">Past Events</h2>
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px; min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center">
-                          <h3 class="mb1">To view all past recordings, visit</h3>
-                          <a href="https://www.youtube.com/playlist?list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y" target="_blank" class="yt-button pb5" style="display: flex; flex-direction: column; align-items: center">
-                            <h4 class="pt1 mb0">The Python Exchange YouTube Playlist</h4>
-                          </a>
-                        </div>
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
-                            <h3>June 25, 2025</h3>
-                            <h3 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Diving into Parquet Read Optimization&CloseCurlyDoubleQuote;</h3>
-                            <h4 style="text-align: center;" class="lb2">Gijs Burghoorn</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/f9lG3zDoiBc?si=OZaO8g0cKWr6C-K-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
-                            <h3>April 30th, 2025</h3>
-                            <h3 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Developments in the scikit-learn Ecosystem: Going Beyond <code>model.fit(X, y).predict(X)</code>&CloseCurlyDoubleQuote;</h3>
-                            <h4 style="text-align: center;" class="lb2">Guillaume Lemaitre</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/15qzsXcNV98?si=kVb_q3DZwwW8NlLH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
-                            <h3>March 25th, 2025</h3>
-                            <h3 style="text-align: center;" class="mt3 mb1">&OpenCurlyDoubleQuote;Narwhals: Lightweight and extensible compatibility layer between dataframe libraries!&CloseCurlyDoubleQuote;</h3>
-                            <h4 style="text-align: center;" class="lb2">Marco Gorelli</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TvFWFlK-2po?si=lcZd3ljbpWwbVQBG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
-                            <h3>February 26th, 2025</h3>
-                            <h3>&OpenCurlyDoubleQuote;skrub for tables: Less wrangling, more machine learning&CloseCurlyDoubleQuote;</h3>
-                            <h4>Gaël Varoquaux</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hdWWhwmRpbA?si=UwwGSPMZO20-2vmB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-                        <div class="pt3 pb3 align--center" style="background-image: linear-gradient(135deg, #90e4d9 0%, #abbce1 100%); padding: 30px; margin-bottom: 15px; border-radius: 15px;">
-                            <h3>January 25th, 2025</h3>
-                            <h3>&OpenCurlyDoubleQuote;Accelerate your Python code with Rust&CloseCurlyDoubleQuote;</h3>
-                            <h4>Juan Luis Cano Rodríguez</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k2_Qcp9yRcA?si=OR6KnUWefkfehXO4" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </section>
-                </div>
-            </main>
-        </div>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="img/doepylogo.png" alt="DoEPy Logo" />
+      <strong style="font-size: 1.4rem; color: #1b264f;">DoEPy</strong>
     </div>
+    <nav>
+      <a href="#upcoming">UPCOMING EVENT</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#past">PAST EVENTS</a>
+    </nav>
+  </header>
 
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1><span style="font-weight: 300">Python</span> <strong>Exchange</strong></h1>
+    <p>
+      Helping Python Thrive within the National Labs & Department of Energy<br/>
+      <a href="#">Join the Python Exchange Mailing List!</a>
+    </p>
+    <button class="cta-button">NEXT EVENT</button>
+  </section>
 
-    <!-- The compiled JavaScript file -->
-    <script src="js/production.js"></script>
+  <!-- Upcoming Event -->
+  <section class="upcoming" id="upcoming">
+    <h2>UPCOMING EVENT</h2>
+    <div class="calendar-box">
+      <div class="top">WEDNESDAY</div>
+      <div class="middle">APRIL</div>
+      <div class="date">30<sup>th</sup></div>
+      <div class="time">4:00 p.m. ET</div>
+    </div>
+    <div class="event-description">
+      <h3>“Developments in the scikit-learn Ecosystem: Going Beyond model.fit(X, y).predict(X)”</h3>
+      <p class="speaker">GUILLAUME LEMAITRE</p>
+    </div>
+  </section>
 
+  <!-- About Our Guest -->
+  <section style="background-color: #96d5e3; padding: 60px 20px; text-align: center;" id="guest">
+    <h2 style="font-size: 2.5rem; color: #1b264f;">ABOUT OUR GUEST</h2>
+    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
+      <img src="img/guillaume.png" alt="Guillaume Lemaitre" style="border-radius: 50%; border: 5px solid #f47d7d; width: 150px; height: 150px; object-fit: cover;">
+      <h3 style="margin-top: 15px; font-size: 1.5rem; color: #1b264f;">Guillaume Lemaitre</h3>
+      <div style="max-width: 600px; background: white; padding: 20px; border-radius: 15px; border: 3px solid #f47d7d; margin-top: 20px;">
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #1b264f;">
+          Guillaume Lemaitre is Chief Machine Learning Officer and an open-source software engineer at Probabl. He is a core maintainer of several packages from the scikit-learn ecosystem such as scikit-learn, skrub, skore, and imbalanced-learn. He holds a PhD in computer science / medical imaging.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talk Overview Section -->
+  <section style="background-color: #f47d7d; padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 1.8rem; color: #ffffff; max-width: 800px; margin: 0 auto;">
+      “DEVELOPMENTS IN THE SCIKIT-LEARN ECOSYSTEM: GOING BEYOND MODEL.FIT(X, Y).PREDICT(X)”
+    </h2>
+    <div style="max-width: 700px; background: #ffffff; color: #1b264f; padding: 25px; border-radius: 10px; border: 3px solid #96d5e3; margin: 30px auto 0 auto; font-size: 1rem; line-height: 1.6; text-align: left;">
+      <p>
+        Scikit-learn is one of the de facto libraries when it comes to predictive modeling with tabular data. For over a decade, it has provided traditional and reliable algorithms to address data science problems. While it excels at model fitting and prediction, these stages represent only a small portion of a data science project and are relatively well-defined. Many data scientists are familiar with the notion that 90% of their time is spent on preprocessing, while the modeling stage takes up only 10% of their efforts. Additionally, tracking and organizing experiments, as well as transitioning from experimentation to production, can be challenging. This talk aims to shed light on recent developments and efforts within the scikit-learn ecosystem. We will provide an overview of the following tools through a series of short notebook demos.
+
+scikit-learn to provide some context.
+skrub, which offers tools to prepare your tabular data and aims to bridge the gap between the database world and the scikit-learn modeling environment.
+skops, which provides tools for transitioning from experimentation to production settings.
+skore, which aims to provide guidance throughout the lifecycle of a data science project by abstracting the above tools, making them more general and less opinionated.
+      </p>
+      <!-- You can add the rest of the paragraph and list here if needed -->
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" style="background-color: #ede576; padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 2.5rem; color: #1b264f;">ABOUT US</h2>
+    <div style="max-width: 700px; margin: 30px auto; font-size: 1.1rem; line-height: 1.6; color: #1b264f;">
+      <div style="max-width: 600px; background: white; padding: 20px; border-radius: 15px; border: 3px solid #f47d7d; margin-top: 20px;">
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #1b264f;">
+      <p>At Don’t Use This Code, we want to create a unique opportunity to see Python succeed and thrive within the National Labs! We propose creating a new resource for scientists, researchers, and technical staff to support their use of Python and to build a strong, lasting community for Python users within the Department of Energy National Labs. Disclaimer:
+The Python Exchange is an independent group of Python enthusiasts who wish to see the use of Python and open-source computing thrive within the National Lab system. This group is not sponsored by or affiliated with the Department of Energy.</p>
+    </div>
+  </section>
+
+  <!-- Past Events Section -->
+  <section id="past" style="background-color: #334673; padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 2.5rem; color: #ffffff;">PAST EVENTS</h2>
+    <div style="max-width: 700px; margin: 30px auto; font-size: 1.1rem; line-height: 1.6; color: #ffffff;">
+      <p>Catch up on past sessions and continue learning with our archive of recordings.</p>
+      <a href="https://www.youtube.com/playlist?list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y" target="_blank"
+         style="display: inline-block; padding: 15px 30px; background-color: #f47d7d; color: white; border-radius: 30px;
+                text-decoration: none; font-weight: bold; margin-top: 20px;">
+        View YouTube Playlist
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #1b264f; padding: 20px; text-align: center; color: #ffffff; font-size: 0.9rem;">
+    <p>We track usage data across our website. For more information, see our privacy policy</p>
+  </footer>
 </body>
-
 </html>

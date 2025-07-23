@@ -1,0 +1,9 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+  {% include "templates/components/header.html.j2" %}
+  <section id="pastEvents" class="mt-3 d-flex flex-column align-items-center">
+    <h2>All Past Events</h2>
+    {% include "templates/components/past_events.html.j2" %}
+  </section>
+{% endblock %}

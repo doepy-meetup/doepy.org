@@ -1,0 +1,105 @@
+:root {
+  --dutc-darkblue: #2e3e6f;
+  --dutc-lightblue: #c3dfff;
+  --dutc-yellow: #faec74;
+  --dutc-salmon: #f47d7d;
+  --dutc-turquoise: #96d5e3;
+}
+
+.bg-dutc-darkblue {
+    background-color: var(--dutc-darkblue);
+}
+.text-dutc-darkblue {
+    color: var(--dutc-darkblue);
+}
+
+.bg-dutc-lightblue {
+    background-color: var(--dutc-lightblue);
+}
+.text-dutc-lightblue {
+    color: var(--dutc-lightblue);
+}
+.btn-turquoise {
+    background-color: var(--dutc-turquoise);
+}
+.btn-turquoise:hover {
+    background-color: color-mix(in srgb, var(--dutc-turquoise), white 20%);
+    color: white;
+}
+
+.bg-dutc-yellow {
+    background-color: var(--dutc-yellow);
+}
+.text-dutc-yellow {
+    color: var(--dutc-yellow);
+}
+
+.bg-dutc-salmon {
+    background-color: var(--dutc-salmon);
+}
+.text-dutc-salmon {
+    color: var(--dutc-salmon);
+}
+.btn-salmon {
+    background-color: var(--dutc-salmon);
+}
+.btn-salmon:hover {
+    background-color: color-mix(in srgb, var(--dutc-salmon), white 20%);
+}
+.btn-outline-salmon {
+  color: var(--dutc-salmon);
+  border: 1px solid var(--dutc-salmon);
+  background-color: transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-outline-salmon:hover,
+.btn-outline-salmon:focus {
+  color: #fff;
+  background-color: var(--dutc-salmon);
+  border-color: var(--dutc-salmon);
+}
+.border-salmon {
+    border-color: var(--dutc-salmon) ! important;
+}
+
+.bg-dutc-turquoise {
+    background-color: var(--dutc-turquoise);
+}
+.text-dutc-turquoise {
+    color: var(--dutc-turquoise);
+}
+.btn-turquoise {
+    background-color: var(--dutc-turquoise);
+}
+.btn-turquoise:hover {
+    background-color: color-mix(in srgb, var(--dutc-turquoise), white 20%);
+}
+
+.hero {
+  padding: 100px 0px
+}
+
+.calendar-box {
+  border: 7px solid black;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.past-event-card:nth-child(even) div {
+    background-color: white;
+}
+.past-event-card:nth-child(odd) div {
+    background-color: gainsboro;
+}
+.btn-yt {
+    background-color: #FF0000;
+    color: white;
+}
+.btn-yt:hover {
+    background-color: color-mix(in srgb, #FF0000, white 20%);
+}
+
+.flex-gap-2 {
+    gap: 1rem;
+}
