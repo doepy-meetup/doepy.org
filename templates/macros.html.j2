@@ -1,0 +1,22 @@
+{% macro show_event(event, i=0) -%}
+  <div id="{{ event.title | to_id }}" class="past-event-card">
+    <div class="container py-3">
+      <h2>
+      <a class="fs-2" href="#{{ event.title | to_id }}">#{{ i }}</a>
+        {{ event.title | markdown | strip_outer_tag }}
+      </h2>
+      <p>{{ event.guest }} — {{ event.date.strftime("%B %d, %Y") }}</p>
+      <div class="row{% if i % 2 == 0 %} flex-row-reverse{% endif %}">
+        <div class="col-12 col-lg-6 align-self-center">
+          <a href="{{ event.youtube }}" target="_blank">
+            <img class="img-thumbnail" src="https://img.youtube.com/vi/{{ event.youtube_key }}/maxresdefault.jpg">
+          </a>
+        </div>
+        <div class="col-12 col-lg-6">
+          <p>{{ event.description }}</p>
+          <a href="{{ event.youtube }}" target="_blank" class="btn btn-yt">Watch on Youtube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
