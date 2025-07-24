@@ -68,12 +68,14 @@ past_events = [pe for pe in past_events if not pe['cancelled']]
 
 
 for src_path in args.source.rglob('*.j2'):
-    dst_path = args.dest / src_path.relative_to(args.source).with_suffix("")
+    rel_path = src_path.relative_to(args.source).with_suffix("")
+    dst_path = args.dest / rel_path
     template = env.get_template(str(src_path))
 
     content = template.render(
         upcoming=upcoming,
         past_events=past_events,
+        current_page=str(rel_path.parent / rel_path.stem),
     )
     dst_path.write_text(content)
 
