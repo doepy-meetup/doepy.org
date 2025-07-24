@@ -1,10 +1,11 @@
 - date: 2025-07-30
   cancelled: false
   guest: Jan Janssen
+  headshot: img/jan-janssen.jpg
   title: Up-scale Python Functions for High-Performance Computing with executorlib
   youtube: ""
   description: |
-    With the raise of machine-learned interatomic potentials in the atomistic
+    With the rise of machine-learned interatomic potentials in the atomistic
     simulation community in Materials Science, the complexity of simulation
     workflows changed from directed acyclic graph (DAG) based simulation
     workflows with typically just a single simulation code to simulation
@@ -18,7 +19,7 @@
     interface in the Python standard library and with the goal to distribute
     Python functions over hundreds of compute nodes. Internally, executorlib
     leverages the Simple Linux Utility for Resource Management (SLURM) and the
-    flux framework from Lawrence Livermore National Laboratory [2] to up-scale
+    flux framework from Lawrence Livermore National Laboratory[2] to up-scale
     simulation workflows from a workstation or traditional high-performance
     computers (HPC) to the latest generation of Exascale machines. In contrast
     to previous solutions, it does not require any daemon process or database
@@ -33,8 +34,8 @@
     Finally, I highlight the general applicability of executorlib to distribute
     python functions of any scientific domain on HPC clusters of all sizes.
 
-    [1]: Janssen et al., JOSS, 10(108), 7782, (2025).
-    [2]: Dong H. Ahn et al., Fut. Gen. Comp. Sys., 110, (2020) .
+    [1]: Janssen et al., JOSS, 10(108), 7782, (2025).<br/>
+    [2]: Dong H. Ahn et al., Fut. Gen. Comp. Sys., 110, (2020).
 
   bio: |
     Jan Janssen is the group leader for Materials Informatics at the Max Planck
@@ -53,6 +54,7 @@
 - date: 2025-06-25
   cancelled: false
   guest: Gijs Burghoorn
+  headshot: "img/Gijs Burghoorn headshot.png"
   title: Diving into Parquet Read Optimization
   youtube: "https://www.youtube.com/watch?v=f9lG3zDoiBc&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=1"
   description: |
@@ -91,6 +93,7 @@
 - date: 2025-04-30
   cancelled: false
   guest: Guillaume Lemaitre
+  headshot: "img/GuillaumeLemaitre.png"
   youtube: "https://www.youtube.com/watch?v=15qzsXcNV98&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=2"
   title: "Developments in the scikit-learn Ecosystem: Going Beyond `model.fit(X, y).predict(X)`"
   description: |
@@ -117,6 +120,7 @@
 - date: 2025-03-25
   cancelled: false
   guest: Marco Gorelli
+  headshot: "img/marco_gorelli.png"
   youtube: "https://www.youtube.com/watch?v=TvFWFlK-2po&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=3"
   title: "Narwhals: Lightweight and extensible compatibility layer between dataframe libraries!"
   description: |
