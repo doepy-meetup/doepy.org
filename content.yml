@@ -1,3 +1,80 @@
+- date: 2025-08-27
+  cancelled: false
+  guest: Yuvi Panda
+  headshot: img/yuvi-panda.png
+  title: "Not just for notebooks: JupyterHub in 2025"
+  youtube: ""
+  description: |
+    > JupyterHub: A multi-user server for Jupyter notebooks
+
+    This is how [JupyterHub](https://jupyter.org/hub) was described when it was
+    announced in 2015, 10 years ago. The focus was on bringing [Jupyter Notebooks](https://jupyter.org/)
+    to multiple users on shared infrastructure. The Jupyter Notebooks
+    focus was so strong that Jupyter was even in the name of the project! Fast
+    forward 10 years, & this is still the most common perception of JupyterHub.
+
+    However, this has not been true for a *long* time now. Instead of setting
+    up 5 different kinds of infrastructure to support your users based on what
+    kind of *interface* they like to use (JupyterLab, RStudio, Linux Desktop
+    tools like qgis or Napari, Visual Studio Code, full `ssh` (!?), etc) for
+    their interactive computing, you can set up a JupyterHub that supports all
+    of those! Meet your users where they are, rather than force them to conform
+    to using only a specific set of tools.
+
+    Come to this talk to:
+    1. See cool demos of various popular applications running on JupyterHub seamlessly
+    2. Understand the security model of JupyterHub & how that enables these cool demos
+    3. Learn how you can set up your own application to run in JupyterHub
+    4. Influence the future of how JupyterHub is marketed
+
+  bio: |
+    Yuvi has been a JupyterHub core team member for close to a decade, solving
+    user problems with empathy by reducing accidental complexity. He is a
+    co-founder of 2i2c.org, a non-profit serving users with interactive
+    computing needs through open infrastructure. He is the co-creator of z2jh,
+    kubespawner, TLJH, mybinder, jupyter-server-proxy, & many other JupyterHub
+    projects. He spends most of his time working on emotional regulation,
+    building local community and riding his motorcycle. Ex-wikimedia.
+
+- date: 2025-06-25
+  cancelled: false
+  guest: Gijs Burghoorn
+  headshot: "img/Gijs Burghoorn headshot.png"
+  title: Diving into Parquet Read Optimization
+  youtube: "https://www.youtube.com/watch?v=f9lG3zDoiBc&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y&index=1"
+  description: |
+    Parquet is an important file-format used in data science world. It provides
+    many opportunities for query optimization and data pruning. Based on our
+    experience optimizing the Polars Parquet reader, we look through how
+    Parquet stores data, its uses and rediscover many of the reader
+    optimizations.
+  bio: |
+    Gijs is a Software Engineer and Open Source maintainer at Polars. He has
+    Masters degree in Cybersecurity from Université Grenoble Alpes and has
+    worked on hardware testing and simulation at the TU Delft. At Polars, he
+    has spend time on improving the Parquet read and write performance.
+- date: 2025-05-28
+  cancelled: true
+  guest: Kyle Sunden
+  title: Dynamic Data with Matplotlib
+  youtube: ""
+  description: |
+    Matplotlib is already a favorite plotting library for creating static data
+    visualizations in Python. Here, we discuss the development of a new
+    DataContainer interface and accompanying transformation pipeline which
+    enable easier dynamic data visualization in Matplotlib. This improves the
+    experience of plotting pure functions, automatically recomputing when you
+    pan and zoom.
+    Data containers can ingest data from a variety of sources,
+    including structured data such as Pandas Dataframes or Xarrays, up to live
+    updating data from web services or databases. The flexible transformation
+    pipeline allows for control over how your data is encoded into a plot.
+  bio: |
+    Kyle is a Research Software Engineer with Matplotlib under the NASA ROSES
+    grant.  Kyle holds a PhD in Chemistry from the University of Wisconsin
+    where he did nonlinear spectroscopy. During his PhD, Kyle primarily worked
+    on instrumentation control software to automate data collection and
+    hardware integration for custom scientific instruments.
 - date: 2025-07-30
   cancelled: false
   guest: Jan Janssen

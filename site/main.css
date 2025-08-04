@@ -6,6 +6,19 @@
   --dutc-turquoise: #96d5e3;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 2px 0.5em;
+}
+blockquote > p {
+  margin-bottom: 6px;
+}
+
+code {
+  background: #f9f9f9;
+}
+
 .bg-dutc-darkblue {
     background-color: var(--dutc-darkblue);
 }
