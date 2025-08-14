@@ -41,7 +41,7 @@
   guest: Jan Janssen
   headshot: img/jan-janssen.jpg
   title: Up-scale Python Functions for High-Performance Computing with executorlib
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=W0gxV-IXVP0"
   description: |
     With the rise of machine-learned interatomic potentials in the atomistic
     simulation community in Materials Science, the complexity of simulation
