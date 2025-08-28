@@ -11,7 +11,7 @@ DoEPy - Home
 <main>
   <section id="exchangeDate" class="d-flex flex-column align-items-center py-5 bg-dutc-yellow">
     {% if upcoming is none %}
-      <h2>Check Back Later for More Information!</h2>
+      <h2>Check Back Later for More Information on our Upcoming Session!</h2>
     {% elif upcoming.cancelled %}
       <h2>The next Python Exchange has been cancelled!</h2>
       <div class="weekday_name">{{ upcoming.date.strftime('%A') }}</div>
