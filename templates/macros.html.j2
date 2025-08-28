@@ -18,7 +18,11 @@
         </div>
         <div class="col-12 col-lg-6">
           <p>{{ event.description | markdown }}</p>
-          <a href="{{ event.youtube }}" target="_blank" class="btn btn-yt">Watch on Youtube</a>
+          {% if event.youtube %}
+            <a href="{{ event.youtube }}" target="_blank" class="btn btn-yt">Watch on Youtube</a>
+          {% else %}
+            <a href="{{ event.youtube }}" target="_blank" class="btn btn-yt disabled" aria-disabled="true">Watch on Youtube</a>
+          {% endif %}
         </div>
       </div>
     </div>
