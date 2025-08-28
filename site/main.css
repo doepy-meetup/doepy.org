@@ -100,10 +100,10 @@ code {
 }
 
 .past-event-card:nth-child(even) div {
-    background-color: white;
+    background-color: gainsboro;
 }
 .past-event-card:nth-child(odd) div {
-    background-color: gainsboro;
+    background-color: white;
 }
 .btn-yt {
     background-color: #FF0000;
