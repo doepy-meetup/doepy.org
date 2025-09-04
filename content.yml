@@ -3,7 +3,7 @@
   guest: Yuvi
   headshot: img/yuvi-panda.png
   title: "Not just for notebooks: JupyterHub in 2025"
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=vsbHMvvsFw8"
   description: |
     > JupyterHub: A multi-user server for Jupyter notebooks
 
