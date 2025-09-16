@@ -9,7 +9,7 @@ DoEPy - Home
 {% include "templates/components/hero.html.j2" %}
 
 <main>
-  <section id="exchangeDate" class="d-flex flex-column align-items-center py-5 bg-dutc-yellow">
+  <section id="exchangeDate" class="d-flex flex-column align-items-center pt-3 pb-5 bg-dutc-yellow">
     {% if upcoming is none %}
       <h2>Check Back Later for More Information on our Upcoming Session!</h2>
     {% elif upcoming.cancelled %}
@@ -18,10 +18,7 @@ DoEPy - Home
       <div class="month">{{ upcoming.date.strftime('%B') }}</div>
       <div class="day">{{ upcoming.date.day }}</div>
     {% else %}
-      <h2 class="text-center mb-0">“{{ upcoming.title }}”</h2>
-      <span>with <span class="fs-5">{{ upcoming.guest }}</span></span>
-
-      <div class="calendar-box d-flex flex-column fw-bold text-center mt-3">
+      <div class="calendar-box d-flex flex-column fw-bold text-center mt-0">
         <span class="bg-dutc-salmon text-white py-1 fs-3">{{ upcoming.date.strftime('%A') }}</span>
         <span class="bg-dutc-turquoise text-white py-1 fs-3">{{ upcoming.date.strftime('%B') }}</span>
         <span class="bg-white text-dutc-salmon fs-1">
@@ -36,6 +33,10 @@ DoEPy - Home
           Add to Google Calendar
         </a>
       </div>
+
+      <h2 class="text-center mb-0 mt-5">“{{ upcoming.title }}”</h2>
+      <span>with <span class="fs-5">{{ upcoming.guest }}</span></span>
+
 
       <div class="container mt-3 p-4 bg-white rounded border border-5 border-salmon">
         {{ upcoming.description | markdown }}
