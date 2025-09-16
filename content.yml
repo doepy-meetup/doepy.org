@@ -1,3 +1,38 @@
+- date: 2025-09-24
+  cancelled: false
+  guest: Maxime Liquet
+  headshot: img/MaximeLiquet.png
+  title: "Better docs, happier users: What we learned applying Diataxis to HoloViz libraries"
+  youtube: ""
+  description: |
+    Clear documentation is crucial for the success of open-source libraries,
+    but it’s often hard to get right. In this talk, I’ll share our experience
+    applying the Diataxis documentation framework to improve two HoloViz
+    ecosystem libraries, hvPlot and Panel. Attendees will come away with
+    practical insights on applying Diataxis and strengthening documentation for
+    their own projects.
+
+    Good documentation turns users into contributors — but achieving it
+    requires more than good intentions. This talk shares the journey of applying
+    the Diataxis framework to improve two open-source Python libraries from the
+    HoloViz ecosystem: Panel and hvPlot.. We’ll start with a short introduction
+    to Diataxis (its four documentation types: tutorials, how-to guides,
+    explanations, and references), then briefly present the libraries we worked
+    on and their documentation challenges.
+
+    The heart of the talk focuses on practical lessons learned: how we mapped
+    existing content into the Diataxis structure, handled content gaps and
+    redundancies, engaged with the user community, and evolved our approach over
+    time. We’ll also discuss what we would do differently if we started again.
+
+    The goal is to give attendees a realistic, hands-on perspective on adopting
+    Diataxis — including both its benefits and its challenges.
+
+  bio: |
+    Software Engineer at Anaconda since 2021, maintaining and improving the
+    open-source data viz libraries of the HoloViz ecosystem. Previously, a
+    civil engineer specialized in flood risk assessment.
+
 - date: 2025-08-27
   cancelled: false
   guest: Yuvi
