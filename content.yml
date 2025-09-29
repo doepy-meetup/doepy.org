@@ -1,3 +1,29 @@
+- date: 2025-10-29
+  cancelled: false
+  guest: Will Dean
+  headshot: img/WillDean.png
+  title: "From Code to PyPI: Streamlining Your Python Package Release with GitHub"
+  youtube: ""
+  description: |
+    Releasing a Python package to PyPI can be a complex process, but it doesn't
+    have to be. This talk provides a comprehensive walkthrough of how to
+    streamline your entire development and release workflow using the power of
+    GitHub. We will cover best practices for ensuring code quality with
+    pre-commit hooks, running automated tests across platforms, and using GitHub
+    Actions to publish your package and deploy documentation. Learn how to
+    leverage repository labels to generate clean, automatic release notes. Using
+    the open-source frame-search library as a real-world example, you'll leave
+    with a clear roadmap to create a smooth, repeatable, and professional release
+    process for your own Python projects.
+  bio: |
+    Will Dean is a Statistician and Data Scientist with experience in
+    geospatial and user analytics. He is passionate about Bayesian methods,
+    using data visualization to tell a story, and designing software that makes
+    solving data problems easier and more enjoyable. This passion has led him
+    to become a creator and maintainer of several Python packages for Bayesian
+    statistics and Data Science, from his own library frame-search to community
+    projects like PyMC-Marketing.
+
 - date: 2025-09-24
   cancelled: false
   guest: Maxime Liquet
