@@ -29,7 +29,7 @@
   guest: Maxime Liquet
   headshot: img/MaximeLiquet.png
   title: "Better docs, happier users: What we learned applying Diataxis to HoloViz libraries"
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=h0TLEihClZw"
   description: |
     Clear documentation is crucial for the success of open-source libraries,
     but it’s often hard to get right. In this talk, I’ll share our experience
