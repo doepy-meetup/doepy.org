@@ -9,7 +9,7 @@
       <div class="row{% if i % 2 == 0 %} flex-row-reverse{% endif %}">
         <div class="col-12 col-lg-6 align-self-center">
           {% if event.youtube %}
-            <a href="{{ event.youtube }}" target="_blank">
+            <a href="{{ event.youtube }}&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y" target="_blank">
               <img class="img-thumbnail" src="https://img.youtube.com/vi/{{ event.youtube_key }}/maxresdefault.jpg">
             </a>
           {% else %}
@@ -19,9 +19,9 @@
         <div class="col-12 col-lg-6">
           <p>{{ event.description | markdown }}</p>
           {% if event.youtube %}
-            <a href="{{ event.youtube }}" target="_blank" class="btn btn-yt">Watch on Youtube</a>
+            <a href="{{ event.youtube }}&list=PLdQruVCKu10mOqZsUg5tzxUaKA2WdXZ_y" target="_blank" class="btn btn-yt">Watch on Youtube</a>
           {% else %}
-            <a href="{{ event.youtube }}" target="_blank" class="btn btn-yt disabled" aria-disabled="true">Coming Soon</a>
+            <a href="" target="_blank" class="btn btn-yt disabled" aria-disabled="true">Coming Soon</a>
           {% endif %}
         </div>
       </div>
