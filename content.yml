@@ -3,7 +3,7 @@
   guest: Will Dean
   headshot: img/WillDean.png
   title: "From Code to PyPI: Streamlining Your Python Package Release with GitHub"
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=uSpNnruxDnA"
   description: |
     Releasing a Python package to PyPI can be a complex process, but it doesn't
     have to be. This talk provides a comprehensive walkthrough of how to
