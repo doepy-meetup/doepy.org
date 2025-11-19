@@ -22,18 +22,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20250924T160000
-DTEND;TZID=America/New_York:20250924T170000
-DTSTAMP:20250915T204249Z
+DTSTART;TZID=America/New_York:20251203T160000
+DTEND;TZID=America/New_York:20251203T170000
+DTSTAMP:20250929T143936Z
 ORGANIZER;CN=The Python Exchange:mailto:c_5dncmbpo14p2rpuu3e6boosfk8@group.
  calendar.google.com
-UID:1c3ru67un16i1b9g0qk75u2agg@google.com
+UID:566pbm0fobvptgak66n6kcs41n@google.com
 ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
  TRUE;CN=brooklynkcook@gmail.com;X-NUM-GUESTS=0:mailto:brooklynkcook@gmail.c
  om
-X-MICROSOFT-CDO-OWNERAPPTID:-1388779066
-RECURRENCE-ID;TZID=America/New_York:20250924T160000
-CREATED:20250915T203922Z
+X-MICROSOFT-CDO-OWNERAPPTID:-1636818032
+CREATED:20250929T143929Z
 DESCRIPTION:Please click the link below to join the webinar:<br><a href="ht
  tps://us02web.zoom.us/j/86983750107" target="_blank"><u>https://us02web.zoo
  m.us/j/86983750107</u></a><br>Or One tap mobile :<br>    +16694449171\,\,86
@@ -49,11 +48,11 @@ DESCRIPTION:Please click the link below to join the webinar:<br><a href="ht
  binar ID: 869 8375 0107<br>    International numbers available: <a href="ht
  tps://us02web.zoom.us/u/kAOzZQ8UE" target="_blank"><u>https://us02web.zoom.
  us/u/kAOzZQ8UE</u></a>
-LAST-MODIFIED:20250915T204249Z
-LOCATION:
-SEQUENCE:1
+LAST-MODIFIED:20250929T143935Z
+LOCATION:https://us02web.zoom.us/j/86983750107
+SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:The Python Exchange with the DOE
+SUMMARY:The Python Exchange
 TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR

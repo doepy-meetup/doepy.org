@@ -1,3 +1,37 @@
+- date: 2025-12-03
+  cancelled: false
+  guest: Vincent Warmerdam
+  headshot: "img/Vincent_Warmerdam.png"
+  title: "Why [marimo](https://marimo.io/) let's me dream about Python notebooks again"
+  youtube: ""
+  description: |
+    For well over a decade, Python notebooks revolutionized our field. They
+    gave us so much creative freedom and dramatically lowered the entry barrier
+    for newcomers. Yet despite all this ... it has been a decade! And the
+    notebook is still in roughly the same form factor.
+
+    So what if we allow ourselves to rethink notebooks ... really rethink it!
+    What features might we come up with? Can we make the notebook understand
+    datasources? What about LLMs? Can we generate widgets on the fly? What if
+    we make changes to Python itself?
+
+    This presentation will be a stream of demos that help paint a picture of
+    what the future might hold. I will share my latest work in the
+    [anywidget](https://anywidget.dev/en/getting-started/)/[marimo](https://marimo.io/)
+    ecosystem as well as some new hardware integrations.
+
+    The main theme that I will work towards: if you want better notebooks,
+    reactive Python might very well be the future.
+  bio: |
+    Vincent is a senior data professional who worked as an engineer,
+    researcher, team lead, and educator in the past. You might know him from
+    tech talks with an attempt to defend common sense over hype in the data
+    space. He is especially interested in understanding algorithmic systems so
+    that one may prevent failure. As such, he has always had a preference to
+    keep calm, and check the dataset before flowing tonnes of tensors. He
+    currently works at marimo, where he spends his time rethinking everything
+    related to Python notebooks.
+
 - date: 2025-10-29
   cancelled: false
   guest: Will Dean
