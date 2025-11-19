@@ -2,14 +2,38 @@ from argparse import ArgumentParser
 from bisect import bisect_left
 from collections import defaultdict
 from datetime import date, timedelta
+from functools import partial
 from itertools import pairwise
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs
 import re
+from urllib.parse import urlparse, parse_qs
+import xml.etree.ElementTree as etree
 
+from markdown import markdown
+from markdown.inlinepatterns import InlineProcessor
+from markdown.extensions import Extension
 from ruamel.yaml import YAML
 from jinja2 import Environment, FileSystemLoader
-from markdown import markdown
+
+
+class AnchorTargetSyntaxProcessor(InlineProcessor):
+    def handleMatch(self, m, data):
+
+        el = etree.Element('a')
+        el.set('href', m.group('url'))
+        el.set('target', m.group('target'))
+        el.text = m.group('text')
+
+        return el, m.start(), m.end()
+
+
+class AnchorTargetSyntaxExtension(Extension):
+    def extendMarkdown(self, md):
+        md.inlinePatterns.register(
+            AnchorTargetSyntaxProcessor(r'\[(?P<text>[^\]]+)\]\((?P<url>[^;)]+);\s+(?P<target>[^;)]+)\)', md),
+            'anchor_target_syntax',
+            180
+        )
 
 def ordinal(n):
     if 10 <= n % 100 <= 20:
@@ -36,7 +60,7 @@ parser.add_argument('dest', type=Path)
 args = parser.parse_args()
 
 env = Environment(loader=FileSystemLoader("."))
-env.filters['markdown'] = markdown
+env.filters['markdown'] = partial(markdown, extensions=[AnchorTargetSyntaxExtension()])
 env.filters['ordinal'] = ordinal
 env.filters['to_id'] = to_id
 env.filters['strip_outer_tag'] = strip_outer_tag
