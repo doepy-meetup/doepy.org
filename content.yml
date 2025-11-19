@@ -2,7 +2,7 @@
   cancelled: false
   guest: Vincent Warmerdam
   headshot: "img/Vincent_Warmerdam.png"
-  title: "Why [marimo](https://marimo.io/) let's me dream about Python notebooks again"
+  title: "Why [marimo](https://marimo.io/; _blank) let's me dream about Python notebooks again"
   youtube: ""
   description: |
     For well over a decade, Python notebooks revolutionized our field. They
@@ -17,7 +17,7 @@
 
     This presentation will be a stream of demos that help paint a picture of
     what the future might hold. I will share my latest work in the
-    [anywidget](https://anywidget.dev/en/getting-started/)/[marimo](https://marimo.io/)
+    [anywidget](https://anywidget.dev/en/getting-started/; _blank)/[marimo](https://marimo.io/; _blank)
     ecosystem as well as some new hardware integrations.
 
     The main theme that I will work towards: if you want better notebooks,
