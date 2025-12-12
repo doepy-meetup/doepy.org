@@ -18,7 +18,6 @@ from jinja2 import Environment, FileSystemLoader
 
 class AnchorTargetSyntaxProcessor(InlineProcessor):
     def handleMatch(self, m, data):
-
         el = etree.Element('a')
         el.set('href', m.group('url'))
         el.set('target', m.group('target'))
