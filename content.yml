@@ -1,3 +1,33 @@
+- date: 2026-01-28
+  cancelled: false
+  guest: Dr. Giordon Stark
+  headshot: "img/07-30-2021-Giordon-Stark.jpeg"
+  title: "Efficient Statistical Modeling for Particle Physics Using Computational Graphs in Python"
+  youtube: ""
+  description: |
+
+  bio: |
+    My Bio Dr. Giordon Stark is a Deaf project scientist, experimental particle
+    physicist involved with the ATLAS collaboration at the Santa Cruz Institute
+    for Particle Physics, at UC Santa Cruz. He earned his PhD in Physics from
+    University of Chicago in 2018, and a B.S in Physics from Caltech in 2012.
+    Giordon's research focuses on looking for signs of physics Beyond the
+    Standard Model with a particular interest in Electroweak Supersymmetry and
+    hadronic final states. He is also passionate about boosted object
+    reconstruction, jet substructure, pile-up mitigation techniques, designing
+    robust hardware triggers, the intersection of particle physics & machine
+    learning, and more! Through these efforts, Giordon has also made core
+    contributions to improving the communication of physics results between the
+    ATLAS Collaboration and particle physics theorists and phenomenologists. He
+    also led a group of physicists within the experiment to combine and
+    summarize the results of many BSM searches, providing key insights for the
+    future of the successful ATLAS Beyond the Standard Model search program.
+    These results will be made public later this year. When Giordon is not busy
+    trying to prove the existence of new physics, he can be found in the
+    kitchen proving sourdoughs, baking pavlovas, and anything else he can get
+    his hands on.
+
+
 - date: 2025-12-03
   cancelled: false
   guest: Vincent Warmerdam
