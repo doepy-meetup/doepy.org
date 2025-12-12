@@ -38,10 +38,12 @@ DoEPy - Home
       <span>with <span class="fs-5">{{ upcoming.guest }}</span></span>
 
 
-      <div class="container mt-3 p-4 bg-white rounded border border-5 border-salmon">
-        {{ upcoming.description | markdown }}
-      </div>
-      <a href="https://us02web.zoom.us/j/86983750107" class="btn btn-salmon mt-2" role="button">Attend The Event Here!</a>
+      {% if upcoming.description %}
+        <div class="container mt-3 p-4 bg-white rounded border border-5 border-salmon">
+          {{ upcoming.description | markdown }}
+        </div>
+        <a href="https://us02web.zoom.us/j/86983750107" class="btn btn-salmon mt-2" role="button">Attend The Event Here!</a>
+      {% endif %}
     {% endif %}
   </section>
 
