@@ -9,12 +9,11 @@ import re
 from urllib.parse import urlparse, parse_qs
 import xml.etree.ElementTree as etree
 
-from markdown import markdown
+from markdown import Markdown
 from markdown.inlinepatterns import InlineProcessor
 from markdown.extensions import Extension
 from ruamel.yaml import YAML
 from jinja2 import Environment, FileSystemLoader
-
 
 class AnchorTargetSyntaxProcessor(InlineProcessor):
     def handleMatch(self, m, data):
@@ -34,6 +33,24 @@ class AnchorTargetSyntaxExtension(Extension):
             180
         )
 
+
+def markdown_to_text(text: str) -> str:
+    """Takes any markdown string and returns just the text that is rendered.
+    """
+    root = MarkdownParser.parser.parseDocument(text.splitlines()).getroot()
+    for processor in MarkdownParser.treeprocessors:
+        processor.run(root)
+
+    def extract(elem):
+        parts = []
+        if elem.text:
+            yield elem.text
+        for child in elem:
+            yield from extract(child)
+            if child.tail:
+                yield child.tail
+    return " ".join((t.strip() for t in extract(root))).strip()
+
 def ordinal(n):
     if 10 <= n % 100 <= 20:
         suffix = "th"
@@ -42,7 +59,8 @@ def ordinal(n):
     return f"{n}{suffix}"
 
 def to_id(value):
-    value = value.lower()
+    value = markdown_to_text(value.lower())
+    value = (value.lower())
     value = re.sub(r'\s+', '-', value)         # replace whitespace with hyphens
     value = re.sub(r'[^a-z0-9\-_]', '', value) # remove invalid characters
     value = re.sub(r'^([^a-z]+)', '', value)   # ensure it starts with a letter
@@ -53,16 +71,19 @@ def strip_outer_tag(string):
         return m.group(1)
     return string
 
+MarkdownParser = Markdown(extensions=[AnchorTargetSyntaxExtension()])
+
 parser = ArgumentParser()
 parser.add_argument('source', type=Path)
 parser.add_argument('dest', type=Path)
 args = parser.parse_args()
 
 env = Environment(loader=FileSystemLoader("."))
-env.filters['markdown'] = partial(markdown, extensions=[AnchorTargetSyntaxExtension()])
+env.filters['markdown'] = MarkdownParser.convert
 env.filters['ordinal'] = ordinal
 env.filters['to_id'] = to_id
 env.filters['strip_outer_tag'] = strip_outer_tag
+env.filters['markdown_to_text'] = markdown_to_text
 
 
 yaml = YAML(typ='safe')
