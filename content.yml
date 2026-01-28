@@ -1,3 +1,51 @@
+- date: 2026-02-25
+  cancelled: false
+  guest: Philipp Rüdiger
+  headshot: "img/philipp.png"
+  title: "From Visualization to Conversational Data Exploration with HoloViz"
+  youtube: ""
+
+  bio: |
+    Philipp Rüdiger is Principal Software Engineer and the HoloViz Team Lead at
+    Anaconda, working in the Professional Services team. At Anaconda, he
+    develops open-source and client-specific solutions for data management,
+    visualization and analysis. He is the author of the open source
+    dashboarding and visualization libraries Panel, hvPlot and Lumen and one of
+    the core developers of Bokeh, Datashader and HoloViews. Before making the
+    switch to software development Philipp completed my PhD and Masters in
+    Computational Neuroscience at the University of Edinburgh working on
+    biologically inspired, deep and recurrent neural network models of the
+    mammalian visual system.
+
+  description: |
+    We will look at how the evolution of HoloViz reflects broader trends in the
+    Python ecosystem over the last decade. We start in the early days of
+    interactive data visualization, when tools like Bokeh and Plotly challenged
+    static plotting and made it possible to explore large datasets dynamically
+    in Python. HoloViz emerged in this moment, focused on composable,
+    high-level abstractions that treated interactivity as a core part of data
+    analysis.
+
+    We then move into the shift from notebooks to data applications, even
+    before frameworks like Dash and Streamlit emerged, we created Panel as a
+    way to quickly share analyses with other users. Panel was developed to
+    bridge analysis and application building, allowing Python users to
+    structure, deploy, and share interactive workflows without splitting their
+    codebase or leaving the open-source scientific stack. This transition
+    marked a turning point for HoloViz, transforming it from a set of
+    visualization tools into a platform for building production data apps.
+
+    The conversation closes with the current wave of change driven by large
+    language models. As “vibe coding” has emerged as an alternative way to
+    quickly prototype applications, we discuss how HoloViz and Panel in
+    particular are staying relevant. Additionally, we take a look at the latest
+    HoloViz project, Lumen, providing an approach to make analysis more
+    accessible without sacrificing structure, transparency, or trust. We
+    discuss how HoloViz is responding by combining conversational interfaces
+    with auditable, Python-based execution that remains fully extensible and
+    open source, and what this transition means for the project as the Python
+    ecosystem continues to evolve.
+
 - date: 2026-01-28
   cancelled: false
   guest: Dr. Giordon Stark
