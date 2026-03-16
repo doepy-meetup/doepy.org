@@ -1,3 +1,39 @@
+- date: 2026-03-25
+  cancelled: false
+  guest: Daniele Procida
+  headshot: "img/Daniele.png"
+  title: "Diátaxis in practice - and in the wild"
+  youtube: ""
+
+  bio: |
+    Daniele is a Director of Engineering at Canonical in Engineering
+    Excellence. His work is concerned with engineering practice leadership and
+    transformation.
+
+    Daniele helps organize community conferences for Python and Django. That
+    includes multiple editions of DjangoCon Europe, as well as the first
+    editions of PyCon Africa and DjangoCon Africa. He also enjoys helping both
+    people and open-source projects to improve their documentation.
+
+  description: |
+    You let ideas loose and then they have a very interesting life of their
+    own!
+
+    It’s nearly ten years since I first began writing and talking about the
+    ideas that shaped the Diátaxis documentation approach. In that time, I’ve
+    seen Diátaxis adopted widely, including in contexts I had not even
+    anticipated. I’m aware of hundreds of software projects that use it.
+
+    I now have a much stronger sense of how it’s interpreted and used,
+    especially when those ideas are picked up by people that I haven’t met or
+    spoken to.
+
+    The lessons learned from seeing what happens when people get hold of those
+    ideas have helped me understand the problems it’s actually solving - not
+    always the ones I’d expected. It has also given me insight into the aspects
+    of the framework that are liable to be misunderstood, or interpreted too
+    rigidly.
+
 - date: 2026-02-25
   cancelled: false
   guest: Philipp Rüdiger
