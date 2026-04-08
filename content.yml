@@ -1,9 +1,45 @@
+- date: 2026-04-29
+  cancelled: false
+  guest: Dawn Wages
+  headshot: "img/dawn-wages.png"
+  title: "Build your castle, dig your moat: AI sovereignty, provenance and compliance"
+  youtube: ""
+
+  bio: |
+    Dawn Wages is the Director of Community and Developer Relations at
+    Anaconda, responsible for the most popular AI and ML Python distribution in
+    the world. She is a software engineer, ethical open source advocate, and
+    community leader who previously served as Chair of the Python Software
+    Foundation. Her work emphasizes inclusive practices and sustainable growth
+    in open source ecosystems, combining technical knowledge with attention to
+    equity, sovereignty, and developer collaboration.
+
+    When not working on Python, she enjoys watching Star Trek in Philadelphia with her wife and two dogs.
+
+  description: |
+    Your intelligent application is your castle, and your security practices
+    are the moat that protects it. Inside your castle, you must aim for full
+    visibility into what you’re running and why, with freedom to iterate
+    without vendor rate limits or surprise API changes. Your moat creates your
+    security perimeter, ensuring no proprietary data leaves your castle and
+    enforcing best practices including data provenance, cryptographically
+    signed models, evaluation tools, build pipelines and reproducible
+    environments.
+
+    Build on your infrastructure, answer to your requirements, scale on your terms.
+
+    In this Python Exchange you’ll learn…
+
+    - What AI sovereignty actually means for your stack and your business
+    - How to evaluate self-hosted, local LLMs
+    - Overview of supply chain security controls for data and code artifacts – provenance, signatures and compliance measures, opacity and trust signals
+
 - date: 2026-03-25
   cancelled: false
   guest: Daniele Procida
   headshot: "img/Daniele.png"
   title: "Diátaxis in practice - and in the wild"
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=PenB0-7ikRA"
 
   bio: |
     Daniele is a Director of Engineering at Canonical in Engineering
