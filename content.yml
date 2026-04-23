@@ -1,3 +1,25 @@
+- date: 2026-05-27
+  cancelled: false
+  guest: Ruben Arts
+  headshot: "img/ruben-arts.png"
+  title: "Pixi: Package management that doesn't stop at Python packages."
+  youtube: ""
+
+  bio: |
+    Ruben is a robotics engineer that has mostly focused on developer
+    experiences. He has moved from robotics to Prefix.dev to help solve
+    developer workflows at large. At Prefix.dev he focuses on community
+    building and outreach to create connections and figure out how to improve
+    the tools to help even more users.
+
+  description: |
+    Pixi is a cross-platfrom cross-language package manager that is build on
+    top of the conda-ecosystem and integrates well with PyPI. It provides a
+    workflow similar to other modern packages managers like uv, yarn, cargo but
+    for every language on every OS.  In this presentation you'll learn the
+    basic usage of Pixi and where it really shines. More info can be found on
+    https://pixi.sh
+
 - date: 2026-04-29
   cancelled: false
   guest: Dawn Wages
