@@ -22,18 +22,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTART;TZID=America/New_York:20250924T160000
-DTEND;TZID=America/New_York:20250924T170000
-RRULE:FREQ=MONTHLY;UNTIL=20261029T035959Z;BYDAY=-1WE
-DTSTAMP:20260107T202157Z
+DTSTART;TZID=America/New_York:20260527T140000
+DTEND;TZID=America/New_York:20260527T150000
+DTSTAMP:20260519T192455Z
 ORGANIZER;CN=The Python Exchange:mailto:c_5dncmbpo14p2rpuu3e6boosfk8@group.
  calendar.google.com
-UID:1c3ru67un16i1b9g0qk75u2agg@google.com
+UID:58m2tpefh2qst1955mri55lt11@google.com
 ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
  TRUE;CN=brooklynkcook@gmail.com;X-NUM-GUESTS=0:mailto:brooklynkcook@gmail.c
  om
-X-MICROSOFT-CDO-OWNERAPPTID:92095659
-CREATED:20250915T203922Z
+X-MICROSOFT-CDO-OWNERAPPTID:2073834148
+CREATED:20260519T192358Z
 DESCRIPTION:Please click the link below to join the webinar:<br><a href="ht
  tps://us02web.zoom.us/j/86983750107" target="_blank"><u>https://us02web.zoo
  m.us/j/86983750107</u></a><br>Or One tap mobile :<br>    +16694449171\,\,86
@@ -46,12 +45,12 @@ DESCRIPTION:Please click the link below to join the webinar:<br><a href="ht
  S<br>    +1 309 205 3325 US<br>    +1 312 626 6799 US (Chicago)<br>    +1 3
  60 209 5623 US<br>    +1 386 347 5053 US<br>    +1 507 473 4847 US<br>    +
  1 564 217 2000 US<br>    +1 646 931 3860 US<br>    +1 689 278 1000 US<br>We
- binar ID: 869 8375 0107<br>    International numbers available: <a href="ht
+ binar ID: 869 8375 0107<br>    International numbers available: <a href="ht
  tps://us02web.zoom.us/u/kAOzZQ8UE" target="_blank"><u>https://us02web.zoom.
  us/u/kAOzZQ8UE</u></a>
-LAST-MODIFIED:20260107T202156Z
+LAST-MODIFIED:20260519T192450Z
 LOCATION:
-SEQUENCE:1
+SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:The Python Exchange with the DOE
 TRANSP:OPAQUE
