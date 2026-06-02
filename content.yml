@@ -3,7 +3,7 @@
   guest: Ruben Arts
   headshot: "img/ruben-arts.png"
   title: "Pixi: Package management that doesn't stop at Python packages."
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=L6nYE2d-Has"
 
   bio: |
     Ruben is a robotics engineer that has mostly focused on developer
@@ -19,6 +19,12 @@
     for every language on every OS.  In this presentation you'll learn the
     basic usage of Pixi and where it really shines. More info can be found on
     https://pixi.sh
+
+    If you’re interested in learning more about packaging, Ruben has recommended
+    watching:
+
+    - [How to Make Package Managers Scream](https://www.youtube.com/watch?v=PBlDHlFnzGo)
+    - [Package Management Learnings from Homebrew](https://www.youtube.com/watch?v=i9VE5ODC5nI)
 
 - date: 2026-04-29
   cancelled: false
