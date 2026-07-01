@@ -1,3 +1,28 @@
+- date: 2026-07-29
+  cancelled: false
+  guest: Dan Yeaw
+  headshot: "img/DanYeaw.png"
+
+  title: Bridging the conda and PyPI Ecosystems
+  youtube: ""
+
+  bio: |
+    Dan Yeaw is a Senior Engineering Manager for Open Source at Anaconda, where
+    he leads the team behind the conda package manager. Over the past eight
+    years, he has contributed to open source projects including GNOME, BeeWare,
+    and Gaphor, and helps build Michigan's Python community. Dan brings a
+    unique background as a former Functional Safety engineer at Ford Motor
+    Company and U.S. Naval Officer.
+
+  description: |
+    If you've ever wondered why `pip install numpy` and `conda install numpy`
+    aren't the same thing, you've bumped into one of Python packaging's oldest
+    fault lines. Conda and PyPI evolved to solve different problems: one for
+    compiled scientific libraries, one for pure-Python packages. The gap between
+    them has caused headaches ever since. In this talk, we'll explore why the
+    split happened, what's fundamentally different under the hood, and how the
+    two ecosystems are finally starting to come together.
+
 - date: 2026-06-24
   cancelled: false
   guest: Rich Iannone
