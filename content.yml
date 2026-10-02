@@ -1,3 +1,45 @@
+- date: 2026-10-28
+  cancelled: false
+  guest: Holden Karau
+  headshot: "img/Holden Karau.png"
+
+  title: "Dealing with AI Security ‘findings’ — a practical guide to not throwing your laptop in a lake"
+  youtube: ""
+
+  bio: |
+    Holden is a transgender Canadian open source developer at Snowflake with a
+    focus on Apache Spark. She is the co-author of Learning Spark, High
+    Performance Spark, and a few others that she would love you to buy. She is
+    a committer and PMC on Apache Spark. She was tricked into the world of big
+    data while trying to improve search and recommendation systems and has long
+    since forgotten her original goal. In her spare time she is building a tool
+    to fight health insurance denials [https://www.fighthealthinsurance.com](https://www.fighthealthinsurance.com),
+    spinning sticks, playing with fire, and riding motorcycles.
+
+  description: |
+    For anyone maintaining an open source project, it's likely only a matter of
+    time until you start to receive largely AI driven security reports in
+    addition to the AI driven pull requests. Even those who don't maintain open
+    source projects, seeing what's happening behind the scenes in OSS projects
+    will help you understand why your favourite OSS project might seem to have
+    a huge number of "[MINOR][FIX]" commits instead of cool new features right
+    this second.
+
+    Historically, we've handled security reports with more caution than pull
+    requests since rejecting a correct security report can have large negative
+    impacts, and the effort required to find a security problem in a project
+    was high.
+
+    Now, for better or worse, the effort being high part has changed; so how do
+    we change our responses? This talk will use Holden Karau's personal
+    experience with the Spark 3.5.9/4.0.4/and 4.1.3 releases to look at how to
+    handle a deluge of (non-opt-in) security reports from external developers;
+    as well as how to handle opt-in security reports from select AI labs (if
+    you are granted such a "privilege.") We'll also look at why these AI
+    security reports leave a lot to be desired and hopefully give you some
+    steps to avoid just giving up and throwing your laptop in the nearest large
+    body of water.
+
 - date: 2026-09-30
   cancelled: false
   guest: Travis Hathaway
