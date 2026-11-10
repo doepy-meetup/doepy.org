@@ -4,7 +4,7 @@
   headshot: "img/Holden Karau.png"
 
   title: "Dealing with AI Security ‘findings’ — a practical guide to not throwing your laptop in a lake"
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=Tb962YkE1do"
 
   bio: |
     Holden is a transgender Canadian open source developer at Snowflake with a
@@ -46,7 +46,7 @@
   headshot: "img/2026-07-09_TravisHathaway.png"
 
   title: "Join the Forge: Contributing Your First Package to conda-forge"
-  youtube: ""
+  youtube: "https://www.youtube.com/watch?v=iP7ALo0ujDY"
 
   bio: |
     Wearer of many hats, but some of my favorite are Python enthusiast, social
