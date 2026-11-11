@@ -1,3 +1,58 @@
+- date: 2026-12-02
+  cancelled: false
+  guest: Dr. Giordon Stark
+  headshot: "img/07-30-2021-Giordon-Stark.jpeg"
+
+  title: "The Facility Is the Context: Agentic Computing Infrastructure for Analysis at Scale"
+  youtube: ""
+
+  bio: |
+    Dr. Giordon Stark is a Deaf project scientist, experimental particle
+    physicist involved with the ATLAS collaboration at the Santa Cruz Institute
+    for Particle Physics, at UC Santa Cruz. He earned his PhD in Physics from
+    University of Chicago in 2018, and a B.S in Physics from Caltech in 2012.
+    Giordon's research focuses on looking for signs of physics Beyond the
+    Standard Model with a particular interest in Electroweak Supersymmetry and
+    hadronic final states. He is also passionate about boosted object
+    reconstruction, jet substructure, pile-up mitigation techniques, designing
+    robust hardware triggers, the intersection of particle physics & machine
+    learning, and more! Through these efforts, Giordon has also made core
+    contributions to improving the communication of physics results between the
+    ATLAS Collaboration and particle physics theorists and phenomenologists. He
+    also led a group of physicists within the experiment to combine and
+    summarize the results of many BSM searches, providing key insights for the
+    future of the successful ATLAS Beyond the Standard Model search program.
+    These results will be made public later this year. When Giordon is not busy
+    trying to prove the existence of new physics, he can be found in the
+    kitchen proving sourdoughs, baking pavlovas, and anything else he can get
+    his hands on.
+
+  description: |
+    Large language model agents are becoming useful for software development
+    and scientific analysis, but making them useful on shared computing
+    infrastructure requires more than the model itself. Agents need reliable
+    access to the software, data, workflows, and identities that researchers
+    already use.
+
+    This talk introduces the Model Context Protocol (MCP) as a practical
+    interface between AI agents and scientific software. I will briefly
+    discuss how MCP can expose existing Python libraries, databases,
+    experiment services, Jupyter environments, and batch systems, and then
+    show how these pieces come together in an MCP platform developed for the
+    UChicago Analysis Facility.
+
+    The platform provides a common gateway for MCP services while handling
+    authentication, authorization, and credential brokering separately from
+    the individual services. This allows agents to work with resources such
+    as Rucio, Jupyter, filesystems, and HTCondor without directly handling
+    users' long-lived credentials.
+
+    Using examples from the ATLAS Analysis Facility and work extending this
+    approach across experiments, I will discuss what works today, the
+    infrastructure challenges that remain, and what an MCP-based approach
+    could mean for making agentic computing portable across scientific
+    facilities.
+
 - date: 2026-10-28
   cancelled: false
   guest: Holden Karau
@@ -319,7 +374,7 @@
     development plans.
 
   bio: |
-    My Bio Dr. Giordon Stark is a Deaf project scientist, experimental particle
+    Dr. Giordon Stark is a Deaf project scientist, experimental particle
     physicist involved with the ATLAS collaboration at the Santa Cruz Institute
     for Particle Physics, at UC Santa Cruz. He earned his PhD in Physics from
     University of Chicago in 2018, and a B.S in Physics from Caltech in 2012.
